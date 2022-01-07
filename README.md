@@ -1,22 +1,23 @@
 # RPI-APS-inverters
-a software for a raspberry pi zero to read the production of aps inverters yc600 and qs1
+A software for a raspberry pi zero to read the production of aps inverters yc600 and qs1
 
-This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are 
+This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
 - displayed on a web page  
 - sent via mosquitto in a Json format
 - saved in a database for charts and statistics. 
 
 The program has a lot of smart features. All settings can be done via the webinterface. It has a console that can be used for debugging and sending/receiving zigbee messages.
 
-dowload the image: becomes available 08-01-2022
+dowload the image: becomes available 07-01-2022 aprox 20:00Hr
 
 See it in action on youtube: under construction
 
-In case someone wants to print the housing: under construction
-
+In case someone wants to print the housing: under construction<br><br>
+![stats](https://user-images.githubusercontent.com/12282915/148557056-7ca1aa16-36bb-4352-a0fb-ba7e8e3b5ee5.jpg)
+<br>
 ## FEATURES:
-- all inverter information such as temperature, etc available
-- production per solar panel displayed
+- all inverter information such as temperature, dc voltage etc available
+- energy production per solar panel displayed
 - Easy wifi config portal
 - Easy add, delete and pair inverters
 - There are 3 different json formats, a special one for domoticz
@@ -39,7 +40,7 @@ Or use a wifi analizer tool on your phone/tablet.
 Start by wiping all present inverterdata (Console). 
 
 ## SETTINGS
-You should expand the filesystem, go to menu, log in with the provided credentials and go to **'menu system expand fs'**>
+You should expand the filesystem, go to menu, log in with the provided credentials and go to **'->menu ->system ->expand fs'**
 <br>After the reboot, the filesystem makes use of the entire sdcard. <br>Check the timezone.
 <br>In the menuitem 'settings' you have to enter the coordinates of your location. Now your system can determine
 sunset and sunrise. <br>Also enter the id nr for the zigbee coordinator, this must be a 12 character string, like D6B3011B9780<br>
