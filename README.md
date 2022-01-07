@@ -27,18 +27,28 @@ charts of the production at multiple days are available
 ## INSTALLATION
 Download the package and burn the image on an sd card.
 Boot up. Open the wifi settings on your computer/tablet/phone. 
-After a while you will see an accesspoint RadioAP. Connect to it wit the paswd rpiradio.
+After a while you will see an accesspoint RadioAP. Connect to it with the paswd rpiradio.
 Now browse to http://192.168.4.1 and enter your wifi credentials as well as a userename/password
 for the security of your webpages. Click save and wait for the reboot button to appear. Click it.
 Now the raspberry reboots and connects to your wifi. This may take a while!
 You can find your raspberry ip address by browsing to http://rpiecu.local.
 Or open your routers webpage to see the connected devices to find the ip address
 
+## FACTORY RESET
+Start by wiping all present inverterdata (Console). 
+
 ## SETTINGS
 You can expand the filesystem, go to menu, log in with the provided credentials and go to <system><expand fs>
 After the reboot, the filsystem makes use of the whole sdcard. Check the timezone.
-In the menuitem settings you have to enter the coordinates of your location. Now your system can determine
-sunset and sunrise.
+In the menuitem 'settings' you have to enter the coordinates of your location. Now your system can determine
+sunset and sunrise. Also enter the id nr for the zigbee coordinator, this must be a 12 character string, like D6B3011B9780
+
+## START THE ZIGBEE SYSTEM
+Check first the hardware, than go to "console" and try to start the zigbee coordinator. With the healthcheck you can see if this succeeded.
+If success you can configure an inverter, go to the menu ínverters and fill up / save the form.
+Now you can try to pair this inverter.  
+If success, this inverter will be polled automatically every 5 minutes. The data is displayed in the frontpage abd charts,
+and is send via Mosquitto. At reboot all processed will be started automatically. 
 
 ## HARDWARE
 It is nothing more than a Raspberry pi Zero and a prepared cc2530, cc2531 zigbee module. And a powersupply. 
