@@ -1,5 +1,5 @@
 # RPI-APS-inverters
-A software for a raspberry pi zero to read the production of aps inverters yc600 and qs1
+A software for a raspberry pi zero to read the production of aps inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
 This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
 - displayed on a web page  
