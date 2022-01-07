@@ -39,13 +39,13 @@ Or use a wifi analizer tool on your phone/tablet.
 Start by wiping all present inverterdata (Console). 
 
 ## SETTINGS
-You can expand the filesystem, go to menu, log in with the provided credentials and go to <system><expand fs>
-After the reboot, the filsystem makes use of the whole sdcard. Check the timezone.
-In the menuitem 'settings' you have to enter the coordinates of your location. Now your system can determine
+You should expand the filesystem, go to menu, log in with the provided credentials and go to '<menu><system><expand fs'>
+<br>After the reboot, the filesystem makes use of the entire sdcard. <br>Check the timezone.
+<br>In the menuitem 'settings' you have to enter the coordinates of your location. Now your system can determine
 sunset and sunrise. Also enter the id nr for the zigbee coordinator, this must be a 12 character string, like D6B3011B9780<br>
-Enter an offset to sunrise and sunset were the polling should start. Usually at sunrise the inverter is not yet started, <br>
+<br><br>Enter an offset to sunrise and sunset were the polling should start. Usually at sunrise the inverter is not yet started, <br>
 it may even restart a couple of times when the power is alternately below or above the threshold value. To rule this out<br>
-you could set an offset of 10 minutes.  
+you could set an offset of about 10 minutes.  
 
 ## START THE ZIGBEE SYSTEM
 Check first the hardware, than go to "console" and try to start the zigbee coordinator. With the healthcheck you can see if this succeeded.
