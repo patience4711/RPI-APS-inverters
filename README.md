@@ -58,7 +58,27 @@ and is send via Mosquitto. At reboot all processed will be started automatically
 It is nothing more than a Raspberry pi Zero and a prepared cc2530, cc2531 zigbee module. And a powersupply. 
 The zigbeemodule should be flashed with a firmware that can be found here https://github.com/Koenkk/zigbee2mqtt/issues/4221.  
 
-hardware:
+## WIRING ZIGBEE MODULES
+you need 5 dupont cables.
+
+**cc2530**<br>
+p2 -> gpio14 ( pin 8 )<br>
+p3 -> gpio15 ( pin 10 )<br>
+rst -> gpio18 ( pin 12 )<br>
+vcc -> 3.3V<br>
+gnd -> g<br>
+<br>
+**cc2531** (not tested by me!)<br>
+dd -> gpio14 ( pin 8 )<br>
+dc -> gpio15 ( pin 10 )<br>
+rst -> gpio18 ( pin 12 )<br>
+vcc -> 3.3V<br>
+gnd -> g<br>
+if this doesn't work try to swap dd and dc<br>
+<br>
+![RPI-ECU_WIRING](https://user-images.githubusercontent.com/12282915/148555017-c3e7a36f-6595-415f-95c7-0eb32400f2bb.jpg)
+
+hardware:<br>
 ![rpi_minhw](https://user-images.githubusercontent.com/12282915/147755635-156ec891-1dfd-4ff3-a59e-979653e1f47a.jpg)
 
 Some webpages
