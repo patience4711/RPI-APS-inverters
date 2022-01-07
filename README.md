@@ -8,7 +8,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 
 The program has a lot of smart features. All settings can be done via the webinterface. It has a console that can be used for debugging and sending/receiving zigbee messages.
 
-dowload the image: becomes available 07-01-2022 aprox 20:00Hr
+dowload the image: https://1drv.ms/u/s!AkMG5FvUwhedinx-ENQnYCwW3y6X?e=Pj4ytL
 
 See it in action on youtube: under construction
 
