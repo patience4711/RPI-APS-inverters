@@ -1,5 +1,6 @@
 # RPI-APS-inverters
-A software for a raspberry pi zero to read the production of aps inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>A very important detail is the software running on the zigbee module, developped by @kadzsol.  
+A software for a raspberry pi zero to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
+A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
 This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
 - displayed on a web page  
@@ -37,7 +38,9 @@ Or open your router's webpage to see the connected devices to find the ip addres
 Or use a wifi analizer tool on your phone/tablet.
 
 ## FACTORY RESET
-Start by wiping all present inverterdata (Console). 
+When i make an image of the system there are settings and data present that belong my inverters. 
+So you should start by wiping all present inverterdata (Console). This is also true when upograding to a new version.
+Im am working on a means to backup settings and data that can be restored ater a software upgrade.
 
 ## SETTINGS
 You should expand the filesystem, go to menu, log in with the provided credentials and go to **'->menu ->system ->expand fs'**
@@ -56,7 +59,13 @@ If success, this inverter will be polled automatically every 5 minutes. The data
 and is send via Mosquitto. At reboot all processed will be started automatically. 
 
 ## HARDWARE
-It is nothing more than a Raspberry pi Zero and a prepared cc2530, cc2531 zigbee module. And a powersupply. 
+What you need for this project is:
+- a Raspberry zero 1 W (yes the W means wifi)
+- micro sd-card class 10, 8 or 16 gB (like in your phone)
+- a cc2530 module, see photo
+- a 5V dc 3A powersupply see photo
+
+estimates costs some 25 Euro.
 The zigbeemodule should be flashed with a firmware that can be found here https://github.com/Koenkk/zigbee2mqtt/issues/4221.  
 
 ## WIRING ZIGBEE MODULES
@@ -81,6 +90,7 @@ if this doesn't work try to swap dd and dc<br>
 
 hardware:<br>
 ![rpi_minhw](https://user-images.githubusercontent.com/12282915/147755635-156ec891-1dfd-4ff3-a59e-979653e1f47a.jpg)
+![pwrsup](https://user-images.githubusercontent.com/12282915/148765236-f1662888-5d44-43d7-a09e-abe379e6e89d.jpg)
 
 Some webpages
 ![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
