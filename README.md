@@ -60,7 +60,7 @@ and is send via Mosquitto. At reboot all processed will be started automatically
 
 ## HARDWARE
 What you need for this project is:
-- a Raspberry zero 1 W (yes the W means wifi)
+- a Raspberry zero 1.3 W (yes the W means wifi) ~11Euro
 - micro sd-card class 10, 8 or 16 gB (like in your phone)
 - a cc2530 module, see photo
 - a 5V dc 3A powersupply see photo
