@@ -23,6 +23,7 @@ In case someone wants to print the housing: under construction<br><br>
 - Easy add, delete and pair inverters
 - There are 3 different json formats, a special one for domoticz
 - a very smart console to send zigbee commands and debug
+- polled values are stored in a database
 - charts of the production at multiple days are available
 - There is a page with statistic data available
 
@@ -39,9 +40,9 @@ Or open your router's webpage to see the connected devices to find the ip addres
 Or use a wifi analizer tool on your phone/tablet.
 
 ## FACTORY RESET
-When i make an image of the system there are settings and data present that belong my inverters. 
-So you should start by wiping all present inverterdata (Console). This is also true when upograding to a new version.
-Im am working on a means to backup settings and data that can be restored ater a software upgrade.
+When i make an image of the system there are settings and data present that belong to my inverters. 
+So you should start by wiping all present inverterdata (Console). This is also true when upgrading to a new version.
+The newest version will have a means to backup settings and data that can be restored ater a software upgrade.
 
 ## SETTINGS
 You should expand the filesystem, go to menu, log in with the provided credentials and go to **'->menu ->system ->expand fs'**
