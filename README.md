@@ -12,10 +12,10 @@ The program has a lot of smart features. All settings can be done via the webint
 dowload the image: https://1drv.ms/u/s!AkMG5FvUwhedin3Wqj9XmK1bHAlk?e=gYdbyx
 
 See it in action on youtube: under construction
-
+Some webpages
+![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
 In case someone wants to print the housing: under construction<br><br>
-![stats](https://user-images.githubusercontent.com/12282915/148557056-7ca1aa16-36bb-4352-a0fb-ba7e8e3b5ee5.jpg)
-<br>
+
 ## FEATURES:
 - all inverter information such as temperature, dc voltage etc available
 - energy production per solar panel displayed
@@ -24,6 +24,7 @@ In case someone wants to print the housing: under construction<br><br>
 - There are 3 different json formats, a special one for domoticz
 - a very smart console to send zigbee commands and debug
 - charts of the production at multiple days are available
+- There is a page with statistic data available
 
 ## INSTALLATION
 Download the package and burn the image on an sd card.
@@ -92,5 +93,5 @@ hardware:<br>
 ![rpi_minhw](https://user-images.githubusercontent.com/12282915/147755635-156ec891-1dfd-4ff3-a59e-979653e1f47a.jpg)
 ![pwrsup](https://user-images.githubusercontent.com/12282915/148765236-f1662888-5d44-43d7-a09e-abe379e6e89d.jpg)
 
-Some webpages
-![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
+![stats](https://user-images.githubusercontent.com/12282915/148557056-7ca1aa16-36bb-4352-a0fb-ba7e8e3b5ee5.jpg)
+<br>
