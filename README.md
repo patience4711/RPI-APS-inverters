@@ -26,6 +26,7 @@ In case someone wants to print the housing: under construction<br><br>
 - polled values are stored in a database
 - charts of the production at multiple days are available
 - There is a page with statistic data available
+- The menu is only accessible from local network with login
 
 ## INSTALLATION
 Download the package and burn the image on an sd card.
@@ -33,6 +34,8 @@ Download the package and burn the image on an sd card.
 After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
 <br>Now browse to http://192.168.4.1 and enter your wifi credentials as well as a userename/password
 for the security of your webpages. Click save and wait for the reboot button to appear. Click it.
+**note:** The security credentials are needed to get access to the settings of your ECU. For security reasons
+only from inside your local network.
 
 <br>Next the raspberry reboots and tries to connect to your wifi. This may take a while!
 You can find your raspberry ip address by browsing to http://rpiecu.local.
