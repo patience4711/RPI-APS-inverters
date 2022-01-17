@@ -99,3 +99,8 @@ hardware:<br>
 
 ![stats](https://user-images.githubusercontent.com/12282915/148557056-7ca1aa16-36bb-4352-a0fb-ba7e8e3b5ee5.jpg)
 <br>
+## CHANGELOG
+version RPI-ECU-v1_1 (planned 21 jan 2022)
+-added backup of settings and databases
+-added upload/install of software upgrade package
+-added some new features in the charts and statistics
