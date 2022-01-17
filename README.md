@@ -103,4 +103,4 @@ hardware:<br>
 version RPI-ECU-v1_1 (planned 21 jan 2022)
 - added backup of settings and databases
 - added upload/install of software upgrade package
-- added some new features in the charts and statistics
+- added some new features to the charts and statistics
