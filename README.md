@@ -1,4 +1,4 @@
-# RPI-APS-inverters
+# APSystems inverters monitoring
 A software for a raspberry pi zero to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
