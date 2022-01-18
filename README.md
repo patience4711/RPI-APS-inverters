@@ -12,7 +12,7 @@ The program has a lot of smart features. All settings can be done via the webint
 dowload the image: temporary unavailable, planned this evening
 
 See it in action on youtube: under construction
-Some webpages
+<br>Some webpages:<br>
 ![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
 In case someone wants to print the housing: under construction<br><br>
 
@@ -27,6 +27,7 @@ In case someone wants to print the housing: under construction<br><br>
 - charts of the production at multiple days are available
 - There is a page with statistic data available
 - The menu is only accessible from local network with login
+- software can be updated by uploading and installing a tar achive
 
 ## INSTALLATION
 Download the package and burn the image on an sd card.
@@ -44,8 +45,7 @@ Or use a wifi analizer tool on your phone/tablet.
 
 ## FACTORY RESET
 When i make an image of the system there are settings and data present that belong to my inverters. 
-So you should start by wiping all present inverterdata (Console). This is also true when upgrading to a new version.
-The newest version will have a means to backup settings and data that can be restored ater a software upgrade.
+You should edit inverter 0 with your own name and serialnr. Now go to the menu 'databases' and wipe all data for inv0 in both databases.
 
 ## SETTINGS
 You should expand the filesystem, go to menu, log in with the provided credentials and go to **'->menu ->system ->expand fs'**
@@ -58,7 +58,7 @@ you could set an offset of about 10 minutes.
 
 ## START THE ZIGBEE SYSTEM
 Check first the hardware, than go to "console" and try to start the zigbee coordinator. With the healthcheck you can see if this succeeded.
-If success you can configure an inverter, go to the menu ínverters and fill up / save the form.
+If success you can configure an inverter, go to the menu 'inverters' and fill up / save the form.
 Now you can try to pair this inverter.  
 If success, this inverter will be polled automatically every 5 minutes. The data is displayed in the frontpage abd charts,
 and is send via Mosquitto. At reboot all processed will be started automatically. 
@@ -99,8 +99,11 @@ hardware:<br>
 
 ![stats](https://user-images.githubusercontent.com/12282915/148557056-7ca1aa16-36bb-4352-a0fb-ba7e8e3b5ee5.jpg)
 <br>
+
 ## CHANGELOG
-version RPI-ECU-v1_1 (planned 21 jan 2022)
+version RPI-ECU-v1_1  18 jan 2022
 - added backup of settings and databases
 - added upload/install of software upgrade package
 - added some new features to the charts and statistics
+- removed a hard-coded inverternumber in midNight.cpp
+- changed the security strategy, only local access to settings pages.
