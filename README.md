@@ -11,8 +11,8 @@ The program has a lot of smart features. All settings can be done via the webint
 
 dowload the image: https://1drv.ms/u/s!AkMG5FvUwhedin4XiVaScixqlVsz?e=MscG0g
 
-See it in action on youtube: under construction
-<br>Some webpages:<br>
+See it in action on youtube: https://youtu.be/oF-QE4GUGy8
+<br><br>Some webpages:<br>
 ![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
 In case someone wants to print the housing: under construction<br><br>
 
