@@ -101,9 +101,10 @@ hardware:<br>
 <br>
 
 ## CHANGELOG
-version RPI-ECU-v1_1  18 jan 2022
-- added backup of settings and databases
-- added upload/install of software upgrade package
+version RPI-ECU-v1_1  19 jan 2022
+- added means of backup of settings and databases
+- added means to upload/install software upgrade package
 - added some new features to the charts and statistics
 - removed a hard-coded inverternumber in midNight.cpp
 - changed the security strategy, only local access to settings pages.
+- changed the retention policy of invEnergy to 3 years
