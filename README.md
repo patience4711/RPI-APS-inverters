@@ -3,7 +3,7 @@ A software for a raspberry pi zero to read the production of APS inverters yc600
 A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
 ## CONSIDER THIS
-i am sure you would like to build this project with some old stuff you already have on the shelf. That won't work. You can test it on an old RPI 1/2. It will run but you won't get the serial port to work, so there is no zigbee. On the RPI-4 it will work, but yes....
+i am sure you would like to build this project with some old stuff you already have on the shelf. That won't work. You can test it on an old RPI 1/2. It will run but you won't get the serial port to work, so there is no zigbee. On the RPI-4 it will work, but yes.... 
 
 ## PURPOSE
 This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
@@ -13,7 +13,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 
 The program has a lot of smart features. All settings can be done via the webinterface. It has a console that can be used for debugging and sending/receiving zigbee messages.
 
-dowload the image 20-1-2022: temporary unavailable 1.5 hr
+dowload the image 20-1-2022:23:55 https://1drv.ms/u/s!AkMG5FvUwhediwEOdSxEFzTWgl3N?e=jbgG4i
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>Some webpages:<br>
@@ -32,6 +32,12 @@ In case someone wants to print the housing: under construction<br><br>
 - There is a page with statistic data available
 - The menu is only accessible from local network with login
 - software can be updated by uploading and installing a tar achive
+
+## SOFTWARE UPDATES
+If the software needs updates, they are provided as a file ecu_swupdate<date>.tar
+This file can be uploaded to your system. When this succeeded you'l get a button<br>
+'install' and when pressed a script is running that unpacks the archive and replaces<br>
+the relative files. You can follow the process in the outputframe.
 
 ## INSTALLATION
 Download the package and burn the image on an sd card.
