@@ -2,6 +2,10 @@
 A software for a raspberry pi zero to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
+## CONSIDER THIS
+i am sure you would like to build this project with some old stuff you already have on the shelf. That won't work. You can test it on an old RPI 1/2. It will run but you won't get the serial port to work, so there is no zigbee. On the RPI-4 it will work, but yes....
+
+## PURPOSE
 This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
 - displayed on a web page  
 - sent via mosquitto in a Json format
