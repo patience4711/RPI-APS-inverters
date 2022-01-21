@@ -39,7 +39,9 @@ This file can be uploaded to your system. When this succeeded you'l get a button
 'install' and when pressed a script is running that unpacks the archive and replaces<br>
 the relative files. You can follow the process in the outputframe.
 
-## INSTALLATION
+## (RE) INSTALLATION
+If you want to install a newer release, you best do this after sunset. You can backup your databases and restore
+them after you installed the new version. (menu databases->backup)<br>
 Download the package and burn the image on an sd card.
 <br>Boot up. Open the wifi settings on your computer/tablet/phone. 
 After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
@@ -48,8 +50,8 @@ for the security of your webpages. Click save and wait for the reboot button to 
 **note:** The security credentials are needed to get access to the settings of your ECU. For security reasons
 only from inside your local network.
 
-<br>Next the raspberry reboots and tries to connect to your wifi. This may take a while!
-You can find your raspberry ip address by browsing to http://rpiecu.local.
+<br>Next the Raspberry reboots and tries to connect to your wifi. This may take a while!
+You can find your Raspberry's ip address by browsing to http://rpiecu.local.
 Or open your router's webpage to see the connected devices to find the ip address.
 Or use a wifi analizer tool on your phone/tablet.
 
@@ -109,6 +111,11 @@ hardware:<br>
 
 ![stats](https://user-images.githubusercontent.com/12282915/148557056-7ca1aa16-36bb-4352-a0fb-ba7e8e3b5ee5.jpg)
 <br>
+
+## TROUBLE SHOOTING
+**You forgot your admin password.** 
+If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page where you
+can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
 version RPI-ECU-v1_1  19 jan 2022
