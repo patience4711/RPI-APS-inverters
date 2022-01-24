@@ -1,9 +1,6 @@
 # APSystems inverters monitoring
-A software for a raspberry pi zero to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
+A software for a Raspberry pi Zero and other models to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol.  
-
-## CONSIDER THIS
-i am sure you would like to build this project with some old stuff you already have on the shelf. That won't work. You can test it on an old RPI 1/2. It will run but you won't get the serial port to work, so there is no zigbee. On the RPI-4 it will work, but yes.... 
 
 ## WARNING
 People keep asking for the ssh login for obvious reasons. Its 'root' and 'mies'. Please be aware that this is known to the whole world now.
@@ -86,7 +83,7 @@ and is send via Mosquitto. At reboot all processed will be started automatically
 
 ## HARDWARE
 What you need for this project is:
-- a Raspberry zero 1.3 W (yes the W means wifi) ~11Euro
+- a Raspberry zero 1.3 W (yes the W means wifi) ~11Euro or a goodold model 1 will work too.
 - micro sd-card class 10, 8 or 16 gB (like in your phone)
 - a cc2530 module, see photo
 - a 5V dc 3A powersupply see photo
