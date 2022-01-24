@@ -5,6 +5,10 @@ A very important detail is the software running on the zigbee module, developped
 ## CONSIDER THIS
 i am sure you would like to build this project with some old stuff you already have on the shelf. That won't work. You can test it on an old RPI 1/2. It will run but you won't get the serial port to work, so there is no zigbee. On the RPI-4 it will work, but yes.... 
 
+## WARNING
+People keep asking for the ssh login for obvious reasons. Its 'root' and 'mies'. Please be aware that this is known to the whole world now.
+So never put the ssh port open ttw unless you have a very strong password.
+
 ## PURPOSE
 This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
 - displayed on a web page  
