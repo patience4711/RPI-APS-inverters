@@ -16,8 +16,13 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 The program has a lot of smart features. All settings can be done via the webinterface. It has a console that can be used for debugging and sending/receiving zigbee messages.
+## DOWNLOADS
+Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5FKcC <br>
+In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
+If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
+Please see 'CHANGELOG'
 
-dowload the image 20-1-2022:23:55 https://1drv.ms/u/s!AkMG5FvUwhediwEOdSxEFzTWgl3N?e=jbgG4i
+dowload the image RPI_ECU-v1_1 20-1-2022:23:55 https://1drv.ms/u/s!AkMG5FvUwhediwEOdSxEFzTWgl3N?e=jbgG4i
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>Some webpages:<br>
@@ -122,6 +127,10 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+version RPI-ECU-v1_1  24 jan 2022
+- changed the chart 'last 30 days' to a selectable month.
+- made the programm suitable for old Raspberry 1 model.
+  
 version RPI-ECU-v1_1  19 jan 2022
 - added means of backup of settings and databases
 - added means to upload/install software upgrade package
