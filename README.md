@@ -1,5 +1,5 @@
 # APSystems inverters monitoring
-A software for a Raspberry pi Zero and other models to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
+A software for a Raspberry pi Zero and other Raspberry models to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
 ## WARNING
@@ -14,6 +14,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 
 The program has a lot of smart features. All settings can be done via the webinterface. It has a console that can be used for debugging and sending/receiving zigbee messages.
 ## DOWNLOADS
+If you are currently using version RPI-ECU-v1_1 you now can simply upgrade to version RPI-ECU-v1_2 without loosing settings or databases.<br>
 Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5FKcC <br>
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
