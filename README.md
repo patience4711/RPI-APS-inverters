@@ -14,7 +14,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 
 The program has a lot of smart features. All settings can be done via the webinterface. It has a console that can be used for debugging and sending/receiving zigbee messages.
 ## DOWNLOADS
-If you are currently using version RPI-ECU-v1_1 you now can simply upgrade to version RPI-ECU-v1_2 without loosing settings or databases.<br>
+If you are currently using version RPI-ECU-v1_1 you now can simply upgrade to version RPI-ECU-v1_2 without losing settings or databases.<br>
 Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5FKcC <br>
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
