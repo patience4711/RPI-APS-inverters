@@ -24,7 +24,7 @@ dowload RPI_ECU-v1_2 25-1-2022 https://1drv.ms/u/s!AkMG5FvUwhediwRUPNGI5o0fE27Z?
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>Some webpages:<br>
 ![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
-In case someone wants to print the housing: under construction<br><br>
+In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwVKpmwKrN0U4S8f?e=1z7UZQ<br><br>
 
 ## FEATURES:
 - all inverter information such as temperature, dc voltage etc available
