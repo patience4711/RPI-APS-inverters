@@ -12,7 +12,6 @@ This project is intended for reading APS Systems inverters. The program can pair
 - sent via mosquitto in a Json format
 - saved in a database for charts and statistics. 
 
-The program has a lot of smart features. All settings can be done via the webinterface. It has a console that can be used for debugging and sending/receiving zigbee messages.
 ## DOWNLOADS
 If you are currently using version RPI-ECU-v1_1 you now can simply upgrade to version RPI-ECU-v1_2 without losing settings or databases.<br>
 Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5FKcC <br>
@@ -20,7 +19,7 @@ In the menu 'system' you'l find the option 'update'. Click this and choose the d
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
 Please see 'CHANGELOG'
 
-dowload the image RPI_ECU-v1_1 20-1-2022:23:55 https://1drv.ms/u/s!AkMG5FvUwhediwEOdSxEFzTWgl3N?e=jbgG4i
+dowload RPI_ECU-v1_2 25-1-2022 https://1drv.ms/u/s!AkMG5FvUwhediwEOdSxEFzTWgl3N?e=jbgG4i
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>Some webpages:<br>
@@ -40,15 +39,8 @@ In case someone wants to print the housing: under construction<br><br>
 - The menu is only accessible from local network with login
 - software can be updated by uploading and installing a tar achive
 
-## SOFTWARE UPDATES
-If the software needs updates, they are provided as a file ecu_swupdate<date>.tar
-This file can be uploaded to your system. When this succeeded you'l get a button<br>
-'install' and when pressed a script is running that unpacks the archive and replaces<br>
-the relative files. You can follow the process in the outputframe.
-
 ## (RE) INSTALLATION
-If you want to install a newer release, you best do this after sunset. You can backup your databases and restore
-them after you installed the new version. (menu databases->backup)<br>
+If you are going to use this software for the first time:
 Download the package and burn the image on an sd card.
 <br>Boot up. Open the wifi settings on your computer/tablet/phone. 
 After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
@@ -61,6 +53,18 @@ only from inside your local network.
 You can find your Raspberry's ip address by browsing to http://rpiecu.local.
 Or open your router's webpage to see the connected devices to find the ip address.
 Or use a wifi analizer tool on your phone/tablet.
+Important: you should do some configuration first. Got to the chapter 'SETTINGS'.
+
+If you already use this software you can do 2 things: Install a new image or simply update the software.
+If you want to install a newer released image, you best do this after sunset. You can backup your databases and restore
+them after you installed the new version. (menu databases->backup).<br>
+
+## SOFTWARE UPDATES
+If the software needs updates, they are provided as a file ecu_swupdate_date.tar that you can download.
+This file can be uploaded to your system. When this succeeded you'l get a button<br>
+'install' and when pressed a script is running that unpacks the archive and replaces<br>
+the relative files. You can follow the process in the outputframe. In the chapter 'CHANGELOG' you can see
+what has been changed.
 
 ## FACTORY RESET
 When i make an image of the system there are settings and data present that belong to my inverters. 
