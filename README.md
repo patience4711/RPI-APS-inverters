@@ -19,7 +19,7 @@ In the menu 'system' you'l find the option 'update'. Click this and choose the d
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
 Please see 'CHANGELOG'
 
-dowload RPI_ECU-v1_2 25-1-2022 https://1drv.ms/u/s!AkMG5FvUwhediwEOdSxEFzTWgl3N?e=jbgG4i
+dowload RPI_ECU-v1_2 25-1-2022 https://1drv.ms/u/s!AkMG5FvUwhediwRUPNGI5o0fE27Z?e=GJn5QH
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>Some webpages:<br>
