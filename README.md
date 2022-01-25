@@ -1,4 +1,7 @@
 # APSystems inverters monitoring
+
+![housing](https://user-images.githubusercontent.com/12282915/150977290-19a81da7-0c82-4eb8-9522-89a74197bcea.jpg)
+
 A software for a Raspberry pi Zero and other Raspberry models to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
@@ -22,10 +25,11 @@ Please see 'CHANGELOG'
 dowload RPI_ECU-v1_2 25-1-2022 https://1drv.ms/u/s!AkMG5FvUwhediwRUPNGI5o0fE27Z?e=GJn5QH
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
-<br><br>Some webpages:<br>
-![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
+<br><br>
 In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwVKpmwKrN0U4S8f?e=1z7UZQ<br><br>
-
+**Some webpages:**<br>
+![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
+<br><br>
 ## FEATURES:
 - all inverter information such as temperature, dc voltage etc available
 - energy production per solar panel displayed
@@ -35,7 +39,7 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwVK
 - a very smart console to send zigbee commands and debug
 - polled values are stored in a database
 - charts of the production at multiple days are available
-- There is a page with statistic data available
+- There is a page with some statistic data 
 - The menu is only accessible from local network with login
 - software can be updated by uploading and installing a tar achive
 
