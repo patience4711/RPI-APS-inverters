@@ -85,7 +85,7 @@ you could set an offset of about 10 minutes.
 
 ## START THE ZIGBEE SYSTEM
 Check first the hardware, than go to "console" and try to start the zigbee coordinator. With the healthcheck you can see if this succeeded.
-If success you can configure an inverter, go to the menu 'inverters' and fill up / save the form.
+If success you can configure an inverter, go to the menu 'inverters' and fill up / save the form. **Attention** you should provide a numeric value in the field DOM.IDX like 123, do not leave it empty or put a non-numeric value. !!! 
 Now you can try to pair this inverter.  
 If success, this inverter will be polled automatically every 5 minutes. The data is displayed in the frontpage abd charts,
 and is send via Mosquitto. At reboot all processed will be started automatically. 
