@@ -16,7 +16,12 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
-If you are currently using version RPI-ECU-v1_1 you now can simply upgrade to version RPI-ECU-v1_2 without losing settings or databases.<br>
+If you are currently using version **RPI-ECU-v1_2** (check infopage) you now can upgrade to version RPI-ECU-v1_3 without losing settings or databases.<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
+In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
+If you get an error about the filename, try to rename it to ecu_swupdate.tar.<br> 
+Please see 'CHANGELOG'
+<br><br>
+If you are currently using version **RPI-ECU-v1_1** you now can simply upgrade to version RPI-ECU-v1_2 without losing settings or databases.<br>
 Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5FKcC <br>
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
@@ -133,7 +138,12 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-version RPI-ECU-v1_1  24 jan 2022
+version RPI-ECU-v1_3  28 jan 2022
+- added a quick analysis tool for statistic research.
+- removed a bug in the pairing process that malformed the inverterProprties files.
+- added a workaround for qs1's not returning values for freq and acv
+
+version RPI-ECU-v1_2  24 jan 2022
 - changed the chart 'last 30 days' to a selectable month.
 - made the programm suitable for old Raspberry 1 model.
   
