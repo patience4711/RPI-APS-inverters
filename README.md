@@ -16,12 +16,13 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
-If you are currently using version **RPI-ECU-v1_2** (check infopage) you now can upgrade to version RPI-ECU-v1_3 without losing settings or databases.<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
+You can update the software version in a convenient way by uploading and installing a tar archive. You will keep your settings and databases. However it is important that you do that in the right order, you cannot skip one. It is harmless to install version 1_3 first  and than 1_2 and than 1_3 again. As long as the order of the last updates is right.<br><br>
+If you are currently using version **RPI-ECU-v1_2** (check the infopage) you can upgrade to version RPI-ECU-v1_3 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
 If you get an error about the filename, try to rename it to ecu_swupdate.tar.<br> 
 Please see 'CHANGELOG'
 <br><br>
-If you are currently using version **RPI-ECU-v1_1** you now can simply upgrade to version RPI-ECU-v1_2 without losing settings or databases.<br>
+If you are currently using version **RPI-ECU-v1_1** (check the infopage) you now can upgrade to version RPI-ECU-v1_2.<br>
 Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5FKcC <br>
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
