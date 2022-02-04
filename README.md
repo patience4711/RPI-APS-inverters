@@ -16,7 +16,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
-You can update the software version in a convenient way by uploading and installing a tar archive. You will keep your settings and databases. However it is important that you do that in the right order, you cannot skip one. It is harmless to install version 1_3 first  and than 1_2 and than 1_3 again. As long as the order of the last updates is right.<br><br>
+You can update the software version in a convenient way by uploading and installing a tar archive. You will keep your settings and databases. However it is important that you do that in the right order, you cannot skip one. It is harmless to install version 1_3 first  and than 1_2 and than 1_3 again. However the order of the last updates must be 2 3 4.<br><br>
+If you are currently using version **RPI-ECU-v1_3** (check the infopage) you can upgrade to version RPI-ECU-v1_4 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
 If you are currently using version **RPI-ECU-v1_2** (check the infopage) you can upgrade to version RPI-ECU-v1_3 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
 If you get an error about the filename, try to rename it to ecu_swupdate.tar.<br> 
@@ -28,7 +29,7 @@ In the menu 'system' you'l find the option 'update'. Click this and choose the d
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
 Please see 'CHANGELOG'
 
-dowload RPI_ECU-v1_3 04-02-2022 temorary unavailable 1hr <br>
+dowload RPI_ECU-v1_4 04-02-2022 https://1drv.ms/u/s!AkMG5FvUwhediw8uRyYhBFCXikJ0?e=VbwwfO <br>
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>
