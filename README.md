@@ -19,7 +19,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 You can update the software version in a convenient way by uploading and installing a tar archive. You will keep your settings and databases. However it is important that you do that in the right order, you cannot skip one. It is harmless to install version 1_3 first  and than 1_2 and than 1_3 again. However the order of the last updates must be 2 3 4.<br><br>
 If you are currently using version **RPI-ECU-v1_4** (check the infopage) you can upgrade to version RPI-ECU-v1_5 .<br>Download the tarball here
 https://1drv.ms/u/s!AkMG5FvUwhedixELkt97KJ12QsdW?e=Xm1bpw <br>
-This update is important as soon a new version 2 will be available. This version can only be installed by burning a new sd image.<br>So you want to backup your settings and databases first, this upgrade contains a new backup procedure.
+This update is important as soon a new version 2 will be available. This version can only be installed by burning a new sd image.<br>Likely you want to backup your settings and databases first. This upgrade contains a new more reliable backup procedure.
 
 If you are currently using version **RPI-ECU-v1_3** (check the infopage) you can upgrade to version RPI-ECU-v1_4 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
 If you are currently using version **RPI-ECU-v1_2** (check the infopage) you can upgrade to version RPI-ECU-v1_3 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
@@ -54,9 +54,9 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 - The menu is only accessible from local network with login
 - software can be updated by uploading and installing a tar achive
 
-## (RE) INSTALLATION
-If you are going to use this software for the first time:
-Download the package and burn the image on an sd card.
+## (RE) INSTALLATION INSTRUCTIONS
+**new installation**<br>
+Download the package, unzip and burn the image on an sd card.
 <br>Boot up. Open the wifi settings on your computer/tablet/phone. 
 After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
 <br>Now browse to http://192.168.4.1 and enter your wifi credentials as well as a userename/password
@@ -70,8 +70,9 @@ Or open your router's webpage to see the connected devices to find the ip addres
 Or use a wifi analizer tool on your phone/tablet.
 Important: you should do some configuration first. Got to the chapter 'SETTINGS'.
 
+**upgrade an existing installation**
 If you already use this software you can do 2 things: Install a new image or simply update the software.
-If you want to install a newer released image, you best do this after sunset. You can backup your databases and restore
+If you want to install a newer released image, you best do this after sunset. You can backup your databases first, and restore
 them after you installed the new version. (menu databases->backup).<br>
 
 ## SOFTWARE UPDATES
@@ -84,10 +85,12 @@ what has been changed.
 ## FACTORY RESET
 When i make an image of the system there are settings and data present that belong to my inverters. 
 You should edit inverter 0 with your own name and serialnr. Now go to the menu 'databases' and wipe all data for inv0 in both databases.
+If you restore a backup, the existing databases are removed and replaced by those in the backup.
 
-## SETTINGS
-You should expand the filesystem, go to menu, log in with the provided credentials and go to **'->menu ->system ->expand fs'**
+## SETTINGS AFTER INSTALL A NEW IMAGE
+First you should expand the filesystem, go to menu, log in with the provided credentials and go to **'->menu ->system ->expand fs'**
 <br>After the reboot, the filesystem makes use of the entire sdcard. <br>Check the timezone.
+If you have made a backup file, you can restore it now. You can skip the following as all of your data, settings and inverters are restored.<br>
 <br>In the menuitem 'settings' you have to enter the coordinates of your location. Now your system can determine
 sunset and sunrise. <br>Also enter the id nr for the zigbee coordinator, this must be a 12 character string, like D6B3011B9780<br>
 <br>Enter an offset to sunrise and sunset were the polling should start. Usually at sunrise the inverter is not yet started, <br>
@@ -144,10 +147,10 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v2_0**  to come soon. Only installable as sd-image.
+**version RPI-ECU-v2_0**  to come soon. Testing right now. Only installable as sd-image.
 - changed the process of gathering the total energy values. 
 - ruled out the effect of disturbances (eclips, inverter resets, zigbee disturbances)
-- added a tool to upload and show a photo of your powerplant
+- added a tool to upload and show a photo of your powerplant.
 
 **version RPI-ECU-v1_5**  11 feb 2022
 - improved the backup process as this was not working as it should.
