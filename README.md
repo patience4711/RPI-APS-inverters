@@ -17,6 +17,10 @@ This project is intended for reading APS Systems inverters. The program can pair
 
 ## DOWNLOADS
 You can update the software version in a convenient way by uploading and installing a tar archive. You will keep your settings and databases. However it is important that you do that in the right order, you cannot skip one. It is harmless to install version 1_3 first  and than 1_2 and than 1_3 again. However the order of the last updates must be 2 3 4.<br><br>
+If you are currently using version **RPI-ECU-v1_4** (check the infopage) you can upgrade to version RPI-ECU-v1_5 .<br>Download the tarball here
+https://1drv.ms/u/s!AkMG5FvUwhedixELkt97KJ12QsdW?e=Xm1bpw <br>
+This update is important as soon a new version 2 will be available. This version can only be installed by burning a new sd image.<br>So you want to backup your settings and databases first, this upgrade contains a new backup procedure.
+
 If you are currently using version **RPI-ECU-v1_3** (check the infopage) you can upgrade to version RPI-ECU-v1_4 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
 If you are currently using version **RPI-ECU-v1_2** (check the infopage) you can upgrade to version RPI-ECU-v1_3 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
@@ -140,23 +144,31 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-version RPI-ECU-v1_4  04 feb 2022
+**version RPI-ECU-v2_0**  to come soon. Only installable as sd-image.
+- changed the process of gathering the total energy values. 
+- ruled out the effect of disturbances (eclips, inverter resets, zigbee disturbances)
+- added a tool to upload and show a photo of your powerplant
+
+**version RPI-ECU-v1_5**  11 feb 2022
+- improved the backup process as this was not working as it should.
+
+**version RPI-ECU-v1_4**  04 feb 2022
 - added a tool for statistic research over an adjustable period.
 - removed a small bug in the mosquitto sending and settings.
 - added a chart for average power
 - added currency setting
 - improved some beauty flaws
 
-version RPI-ECU-v1_3  28 jan 2022
+**version RPI-ECU-v1_3**  28 jan 2022
 - added a quick analysis tool for statistic research.
 - removed a bug in the pairing process that malformed the inverterProprties files.
 - added a workaround for qs1's not returning values for freq and acv
 
-version RPI-ECU-v1_2  24 jan 2022
+**version RPI-ECU-v1_2**  24 jan 2022
 - changed the chart 'last 30 days' to a selectable month.
 - made the programm suitable for old Raspberry 1 model.
   
-version RPI-ECU-v1_1  19 jan 2022
+**version RPI-ECU-v1_1**  19 jan 2022
 - added means of backup of settings and databases
 - added means to upload/install software upgrade package
 - added some new features to the charts and statistics
