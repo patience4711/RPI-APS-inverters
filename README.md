@@ -18,7 +18,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 ## DOWNLOADS
 You can update the software version in a convenient way by uploading and installing a tar archive. You will keep your settings and databases. However it is important that you do that in the right order, you cannot skip one. It is harmless to install version 1_3 first  and than 1_2 and than 1_3 again. However the order of the last updates must be 2 3 4.<br><br>
 If you are currently using version **RPI-ECU-v1_4** (check the infopage) you can upgrade to version RPI-ECU-v1_5 .<br>Download the tarball here
-https://1drv.ms/u/s!AkMG5FvUwhedixELkt97KJ12QsdW?e=Xm1bpw <br>
+https://1drv.ms/u/s!AkMG5FvUwhedixKJflkO_z8JjhBo?e=IAtQ8y <br>
 This update is important as soon a new version 2 will be available. This version can only be installed by burning a new sd image.<br>Likely you want to backup your settings and databases first. This upgrade contains a new more reliable backup procedure.
 
 If you are currently using version **RPI-ECU-v1_3** (check the infopage) you can upgrade to version RPI-ECU-v1_4 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
