@@ -16,9 +16,9 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
-2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Be sure you upgraded to version RPI-ECU-v1_5 if you want to reliable backup your settings and databases. See the readme in the package for instructions.<br><br>You can download the package here:
-in progress<br><br>
-**instructions** You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration.
+2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Be sure you upgraded to version RPI-ECU-v1_5 if you want to reliable backup your settings and databases. Please follow the steps in **installation via the sd-card immge** , in particular it is important that you expand the filesystem first, before restoring your backup!!. <br><br>You can download the package here:
+https://1drv.ms/u/s!AkMG5FvUwhedixPTuIXzbsG3cnrZ?e=PV8bUQ<br><br>
+**instructions** You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration. Follow the steps in * installation of a new
 <br><br>**version 1:**<br>
 Only the upgrade to 1_5 matters for the backup procedure. Than you can migrate to version 2. 
 
