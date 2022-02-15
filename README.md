@@ -16,15 +16,19 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
-You can update the software version in a convenient way by uploading and installing a tar archive. You will keep your settings and databases. However it is important that you do that in the right order, you cannot skip one. It is harmless to install version 1_3 first  and than 1_2 and than 1_3 again. However the order of the last updates must be 2 3 4.<br><br>
-If you are currently using version **RPI-ECU-v1_4** (check the infopage) you can upgrade to version RPI-ECU-v1_5 .<br>Download the tarball here
+2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Be sure you upgraded to version RPI-ECU-v1_5 if you want to reliable backup your settings and databases. See the readme in the package for instructions.<br><br>You can download the package here:
+https://1drv.ms/u/s!AkMG5FvUwhedixPTuIXzbsG3cnrZ?e=PV8bUQ<br><br>
+**instructions** You can burn the image on a preferably new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration.
+<br><br>**version 1:**<br>
+Only the upgrade to 1_5 matters for the backup procedure. Than you can migrate to version 2. 
+
+If you are currently using version **RPI-ECU-v1-4** (check the infopage) you can upgrade to version RPI-ECU-v1_5 .<br>Download the tarball here
 https://1drv.ms/u/s!AkMG5FvUwhedixKJflkO_z8JjhBo?e=IAtQ8y <br>
 This update is important as soon a new version 2 will be available. This version can only be installed by burning a new sd image.<br>Likely you want to backup your settings and databases first. This upgrade contains a new more reliable backup procedure.
 
-If you are currently using version **RPI-ECU-v1_3** (check the infopage) you can upgrade to version RPI-ECU-v1_4 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
-If you are currently using version **RPI-ECU-v1_2** (check the infopage) you can upgrade to version RPI-ECU-v1_3 .<br>Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
-In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
-If you get an error about the filename, try to rename it to ecu_swupdate.tar.<br> 
+upgrade to version RPI-ECU-v1_4: https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
+upgrade to version RPI-ECU-v1_3: https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
+ 
 Please see 'CHANGELOG'
 <br><br>
 If you are currently using version **RPI-ECU-v1_1** (check the infopage) you now can upgrade to version RPI-ECU-v1_2.<br>
@@ -147,7 +151,7 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v2_0**  to come soon. Testing right now. Only installable as sd-image.
+**version RPI-ECU-v2_0**  Only installable as sd-image.
 - changed the process of gathering the total energy values. 
 - ruled out the effect of disturbances (eclips, inverter resets, zigbee disturbances)
 - added a tool to upload and show a photo of your powerplant.
