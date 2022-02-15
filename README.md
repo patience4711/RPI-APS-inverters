@@ -17,7 +17,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 
 ## DOWNLOADS
 2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Be sure you upgraded to version RPI-ECU-v1_5 if you want to reliable backup your settings and databases. See the readme in the package for instructions.<br><br>You can download the package here:
-https://1drv.ms/u/s!AkMG5FvUwhedixPTuIXzbsG3cnrZ?e=PV8bUQ<br><br>
+in progress<br><br>
 **instructions** You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration.
 <br><br>**version 1:**<br>
 Only the upgrade to 1_5 matters for the backup procedure. Than you can migrate to version 2. 
@@ -59,20 +59,26 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 - software can be updated by uploading and installing a tar achive
 
 ## (RE) INSTALLATION INSTRUCTIONS
-**new installation**<br>
-Download the package, unzip and burn the image on an sd card.
-<br>Boot up. Open the wifi settings on your computer/tablet/phone. 
+**installation via the sd-card immge**<br>
+**step 1** Download the package, unzip and burn the image on an sd card. I you are new user of this software please continue with stap 3.
+**step 2** You already are using this software then you can make a backup of your system and databases first. You should do this after sunset. Then complete the next steps before midnight in order to get a smooth migration..
+**step 3**
+<br>Boot up with the new sd-card. Open the wifi settings on your computer/tablet/phone. 
 After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
 <br>Now browse to http://192.168.4.1 and enter your wifi credentials as well as a userename/password
 for the security of your webpages. Click save and wait for the reboot button to appear. Click it.
-**note:** The security credentials are needed to get access to the settings of your ECU. For security reasons
-only from inside your local network.
+**note:** The security credentials are needed to get access to the settings of your ECU. 
 
 <br>Next the Raspberry reboots and tries to connect to your wifi. This may take a while!
 You can find your Raspberry's ip address by browsing to http://rpiecu.local.
 Or open your router's webpage to see the connected devices to find the ip address.
 Or use a wifi analizer tool on your phone/tablet.
-Important: you should do some configuration first. Got to the chapter 'SETTINGS'.
+**step 4**
+The first thing to do now is to expand the filesystem. Go to the menu 'system' and click the button 'expand'.
+After the reboot you can restore your system backup.
+**step 5**
+If you restored a systembackup you can check the settings otherwise you should do some other configuration first. See the chapter 'SETTINGS'.
+In particular the setting of the geographic coordinates is important.
 
 **upgrade an existing installation**
 If you already use this software you can do 2 things: Install a new image or simply update the software.
@@ -92,20 +98,16 @@ You should edit inverter 0 with your own name and serialnr. Now go to the menu '
 If you restore a backup, the existing databases are removed and replaced by those in the backup.
 
 ## SETTINGS AFTER INSTALL A NEW IMAGE
-First you should expand the filesystem, go to menu, log in with the provided credentials and go to **'->menu ->system ->expand fs'**
-<br>After the reboot, the filesystem makes use of the entire sdcard. <br>Check the timezone.
-If you have made a backup file, you can restore it now. You can skip the following as all of your data, settings and inverters are restored.<br>
 <br>In the menuitem 'settings' you have to enter the coordinates of your location. Now your system can determine
 sunset and sunrise. <br>Also enter the id nr for the zigbee coordinator, this must be a 12 character string, like D6B3011B9780<br>
-<br>Enter an offset to sunrise and sunset were the polling should start. Usually at sunrise the inverter is not yet started, <br>
-it may even restart a couple of times when the power is alternately below or above the threshold value. To rule this out<br>
-you could set an offset of about 10 minutes.  
+<br>Enter an offset to sunrise and sunset were the polling should start. On a bright day, the inverter may startup before sunrise. <br>
+I have an offset of -5 so i start 5 minutes before sunrise with the polling.  
 
 ## START THE ZIGBEE SYSTEM
 Check first the hardware, than go to "console" and try to start the zigbee coordinator. With the healthcheck you can see if this succeeded.
 If success you can configure an inverter, go to the menu 'inverters' and fill up / save the form. **Attention** you should provide a numeric value in the field DOM.IDX like 123, do not leave it empty or put a non-numeric value. !!! 
-Now you can try to pair this inverter.  
-If success, this inverter will be polled automatically every 5 minutes. The data is displayed in the frontpage abd charts,
+Now you can try to pair this inverter, but only during daylight, the inverter will not answer when it's not working.  
+If success, this inverter will be polled automatically every 5 minutes. The data is displayed in the frontpage and charts,
 and is send via Mosquitto. At reboot all processed will be started automatically. 
 
 ## HARDWARE
