@@ -56,6 +56,7 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 - Easy add, delete and pair inverters
 - There are 3 different json formats, a special one for domoticz
 - a very smart console to send zigbee commands and debug
+- almost all processes show debug information, most pages have a frame for that.
 - polled values are stored in a database
 - charts of the production at multiple days are available
 - There is a page with some statistic data 
@@ -99,18 +100,19 @@ When i make an image of the system there are settings and data present that belo
 You should edit inverter 0 with your own name and serialnr. Now go to the menu 'databases' and wipe all data for inv0 in both databases.
 If you restore a backup, the existing databases are removed and replaced by those in the backup.
 
-## SETTINGS AFTER INSTALL A NEW IMAGE
-<br>In the menuitem 'settings' you have to enter the coordinates of your location. Now your system can determine
+## SETTINGS AFTER INSTALL OF A NEW SD-CARD
+<br>In the menuitem 'settings' you have to enter the geographical coordinates of your location (google for latitude on your city). Now your system can determine
 sunset and sunrise. <br>Also enter the id nr for the zigbee coordinator, this must be a 12 character string, like D6B3011B9780<br>
 <br>Enter an offset to sunrise and sunset were the polling should start. On a bright day, the inverter may startup before sunrise. <br>
-I have an offset of -5 so i start 5 minutes before sunrise with the polling.  
+In the journal you can see the timespan at the first poll, this is the amount of seconds the inverter is already working.
+I have an offset of -5 so i start 5 minutes before sunrise and stops 5 minutes after sunset with the polling.  
 
 ## START THE ZIGBEE SYSTEM
-Check first the hardware, than go to "console" and try to start the zigbee coordinator. With the healthcheck you can see if this succeeded.
+Check first the hardware, than go to "console" and do a healthcheck. If the zigbee coordinator is not running, check the wiring and try to start it. With the healthcheck you can see if this succeeded.
 If success you can configure an inverter, go to the menu 'inverters' and fill up / save the form. **Attention** you should provide a numeric value in the field DOM.IDX like 123, do not leave it empty or put a non-numeric value. !!! 
 Now you can try to pair this inverter, but only during daylight, the inverter will not answer when it's not working.  
 If success, this inverter will be polled automatically every 5 minutes. The data is displayed in the frontpage and charts,
-and is send via Mosquitto. At reboot all processed will be started automatically. 
+and is send via Mosquitto. At reboot all processes will be started automatically. 
 
 ## HARDWARE
 What you need for this project is:
