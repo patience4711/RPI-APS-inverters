@@ -5,9 +5,10 @@
 A software for a Raspberry pi Zero and other Raspberry models to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol.  
 
-## WARNING
-People keep asking for the ssh login for obvious reasons. Its 'root' and 'mies'. Please be aware that this is known to the whole world now.
-So never put the ssh port open ttw unless you have a very strong password.
+## IMPORTANT TO KNOW
+People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
+So **never** put the ssh port open ttw, unless you have a very strong password.<br><br>
+The influx database system has the very annoying feature that it starts very slow, sometimes as much as 15 minutes after system boot. This means that you shouldn't backup or restore databases during this period! 
 
 ## PURPOSE
 This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
@@ -19,16 +20,17 @@ This project is intended for reading APS Systems inverters. The program can pair
 2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v1_5. And schedule some time after sunset to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 <br><br>You can download the package here:
 https://1drv.ms/u/s!AkMG5FvUwhedixSw_CWChCslZabL?e=cYBWid<br><br>
-**instructions:** You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration. If all goes well, it wil take you 1.5 hour. If you can't get the new system running before midnight, you have to continue using your old system. make a backup the next evening and try again.
-<br>**make a backup of your system**<br>
-If you want to make a backup, first ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same evening as it was made. If you restore it on a later date you will miss data.
+**instructions:** <br>
+You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration. If all goes well, it wil take you 1.5 hour. If you can't get the new system running before midnight, you have to continue using your old system. make a backup the next evening and try again.
+<br><br>**backing-up your system**<br>
+Be sure that you are running version 1_5 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same evening as it was made. If you restore it on a later date you will miss data.
 
-<br><br>**version 1:**<br>
+<br>**version 1:**<br>
 Only the upgrade to 1_5 matters for the backup procedure. Than you can migrate to version 2. 
 
 If you are currently using version **RPI-ECU-v1-4** (check the infopage) you can upgrade to version RPI-ECU-v1_5 .<br>Download the tarball here
 https://1drv.ms/u/s!AkMG5FvUwhedixKJflkO_z8JjhBo?e=IAtQ8y <br>
-This update is important as soon a new version 2 will be available. This version can only be installed by burning a new sd image.<br>Likely you want to backup your settings and databases first. This upgrade contains a new more reliable backup procedure.
+This update is important if you are going to migrate to version 2_0. This version can only be installed by burning a new sd image.<br>Likely you want to backup your settings and databases first. This upgrade contains a new more reliable backup procedure.
 
 upgrade to version RPI-ECU-v1_4: https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
 upgrade to version RPI-ECU-v1_3: https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
@@ -157,7 +159,7 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v2_0**  Only installable as sd-image.
+**version RPI-ECU-v2_0**  15 feb 20222 Only installable as sd-image.
 - changed the process of gathering the total energy values. 
 - ruled out the effect of disturbances (eclips, inverter resets, zigbee disturbances)
 - added a tool to upload and show a photo of your powerplant.
