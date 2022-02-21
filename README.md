@@ -17,9 +17,9 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
-2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v1_5. And schedule some time after sunset to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
+2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v1_5. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 <br><br>You can download the package here:
-https://1drv.ms/u/s!AkMG5FvUwhedixSw_CWChCslZabL?e=cYBWid<br><br>
+temporary unavailable
 **instructions:** <br>
 You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration. If all goes well, it wil take you 1.5 hour. If you can't get the new system running before midnight, you have to continue using your old system. make a backup the next evening and try again.
 <br><br>**backing-up your system**<br>
@@ -68,7 +68,7 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 ## (RE) INSTALLATION INSTRUCTIONS
 **installation via the sd-card image**<br>
 **step 1**<br> Download the package, unzip and burn the image on an sd card. I you are new user of this software please continue with stap 3.<br>
-**step 2**<br> You already are using this software then you can make a backup of your system and databases first. You should do this after sunset. Then complete the next steps before midnight in order to get a smooth migration.<br>
+**step 2**<br> You already are using this software then you can make a backup of your system and databases first. You should do this afther midnight. Then complete the next steps before sunrise in order to get a smooth migration.<br>
 **step 3**<br>
 Boot up with the new sd-card. Open the wifi settings on your computer/tablet/phone. 
 After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
