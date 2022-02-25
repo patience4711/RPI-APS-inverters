@@ -17,6 +17,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
+2022-02-25 A software update to version RPI-ECU-v2_1 is available (see changelog). Install this only when you currently use version 2_0<br> https://1drv.ms/u/s!AkMG5FvUwhedix8xSOvp7YAxMspk?e=hgKOuf see **SOFTWARE UPDATES**
+
 2022-02-15 The new version RPI-ECU-v2_0 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v1_5. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 <br><br>You can download the package here:
 https://1drv.ms/u/s!AkMG5FvUwhedix1ovUcyG6_nf0KO?e=DeIKK0
@@ -42,8 +44,6 @@ Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5F
 In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
 If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
 Please see 'CHANGELOG'
-
-dowload RPI_ECU-v1_4 04-02-2022 https://1drv.ms/u/s!AkMG5FvUwhediw8uRyYhBFCXikJ0?e=VbwwfO <br>
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>
@@ -159,6 +159,11 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v2_1**  25 feb 20222 upgrade archive.
+- repaired a bug with offset to sunrise / sunset
+- restored a missing file for mqtt test.
+- Some cosmetics
+
 **version RPI-ECU-v2_0**  15 feb 20222 Only installable as sd-image.
 - changed the process of gathering the total energy values. 
 - ruled out the effect of disturbances (eclips, inverter resets, zigbee disturbances)
