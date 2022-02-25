@@ -25,7 +25,7 @@ https://1drv.ms/u/s!AkMG5FvUwhedix1ovUcyG6_nf0KO?e=DeIKK0
 **instructions:** <br>
 You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration. If all goes well, it wil take you 1.5 hour. If you can't get the new system running before midnight, you have to continue using your old system. make a backup the next evening and try again.
 <br><br>**backing-up your system**<br>
-Be sure that you are running version 1_5 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same evening as it was made. If you restore it on a later date you will miss data.
+Be sure that you are running version 1_5 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data.
 
 <br>**version 1:**<br>
 Only the upgrade to 1_5 matters for the backup procedure. Than you can migrate to version 2. 
