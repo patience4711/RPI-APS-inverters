@@ -67,8 +67,8 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 
 ## (RE) INSTALLATION INSTRUCTIONS
 **installation via the sd-card image**<br>
-**step 1**<br> Download the package, unzip and burn the image on an sd card. I you are new user of this software please continue with stap 3.<br>
-**step 2**<br> You already are using this software then you can make a backup of your system and databases first. You should do this afther midnight. Then complete the next steps before sunrise in order to get a smooth migration.<br>
+**step 1**<br> Download the package, unzip and burn the image on an sd card. If you are new user of this software please continue with stap 3.<br>
+**step 2**<br> You already are using this software then you can make a backup of your system and databases first. You should do this after midnight. Then complete the next steps before sunrise in order to get a smooth migration.<br>
 **step 3**<br>
 Boot up with the new sd-card. Open the wifi settings on your computer/tablet/phone. 
 After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
@@ -83,9 +83,9 @@ Or use a wifi analizer tool on your phone/tablet.<br>
 **step 4**<br>
 The first thing to do now is to expand the filesystem. Go to the menu 'system' and click the button 'expand'.<br>
 **Important: If you want to restore a backup then, after the expansion reboot, you need to wait until the influxdb is running.** This can take as much as 15 minutes!!!! 
-By doing a query in the menu database you can find out if influx is running. If so can restore your system backup. 
+By doing a query in the menu database you can find out if influx is running. If so, you can restore your system backup. 
 Check if the databases are restored by clicking a chart of the date of yesterday. 
-If that doesn't give the expected result you can try to restore the update again.<br>
+If that doesn't give the expected result you can try to restore the backup again.<br>
 **step 5**<br>
 If you restored a systembackup you can check the settings now.  Otherwise you should do some other configuration first. See the chapter 'SETTINGS'.
 In particular the setting of the geographical coordinates is important.
