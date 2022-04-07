@@ -17,6 +17,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
+2022-03-29 A software update to version RPI-ECU-v2_3 is available (see changelog). Install this only when you currently use version 2_2<br>
+https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7
 2022-03-29 A software update to version RPI-ECU-v2_2 is available (see changelog). Install this only when you currently use version 2_1<br> https://1drv.ms/u/s!AkMG5FvUwhedizMIrXNOnCWgsIZK?e=nEqyOW see **SOFTWARE UPDATES**<br>
 2022-02-25 A software update to version RPI-ECU-v2_1 is available (see changelog). Install this only when you currently use version 2_0<br> https://1drv.ms/u/s!AkMG5FvUwhedix8xSOvp7YAxMspk?e=hgKOuf see **SOFTWARE UPDATES**
 
@@ -160,6 +162,9 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v2_3**  22 march 20222 upgrade archive.
+- repaired a bug with database editing
+
 **version RPI-ECU-v2_2**  22 march 20222 upgrade archive.
 - added a utility to edit database entries in 'invEnergy'
 
