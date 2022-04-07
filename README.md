@@ -3,7 +3,8 @@
 ![housing](https://user-images.githubusercontent.com/12282915/150977290-19a81da7-0c82-4eb8-9522-89a74197bcea.jpg)
 
 A software for a Raspberry pi Zero and other Raspberry models to read the production of APS inverters yc600 and qs1. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
-A very important detail is the software running on the zigbee module, developped by @kadzsol.  
+A very important detail is the software running on the zigbee module, developped by @kadzsol. 
+**NEW** The implementation of the DS3 inverter is comming soon. 
 
 ## IMPORTANT TO KNOW
 People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
