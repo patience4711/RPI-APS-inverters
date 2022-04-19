@@ -12,14 +12,14 @@ So **never** put the ssh port open ttw, unless you have a very strong password.<
 The influx database system has the very annoying feature that it starts very slow, sometimes as much as 15 minutes after system boot. This means that you shouldn't backup or restore databases during this period! 
 
 ## PURPOSE
-This project is intended for reading APS Systems inverters. The program can pair and poll YC600 and QS1 inverters, up to 9 pieces. The read values are: 
+This project is intended for reading APS Systems inverters. The program can pair and poll YC600, QS1 and DS3 inverters, up to 9 pieces. The read values are: 
 - displayed on a web page  
 - sent via mosquitto in a Json format
 - saved in a database for charts and statistics. 
 
 ## DOWNLOADS
 2022-04-19 A new image version RPI-ECU-v2_4 is available (see changelog). This version works with the DS3 inverter.<br>
-If you don't have a DS3, you you don't have to in stall this, you are up to date with version 2_3. 
+If you don't have a DS3, you you don't have to install this, you are up to date with version 2_3. 
 
 2022-03-29 A software update to version RPI-ECU-v2_4 is available (see changelog). Install this only when you currently use version 2_2<br>
 https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7
