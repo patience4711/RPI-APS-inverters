@@ -22,13 +22,13 @@ This project is intended for reading APS Systems inverters. The program can pair
 ## DOWNLOADS
 2022-04-19 A new image version RPI-ECU-v2_4 is available (see changelog). This version works with the DS3 inverter.<br>
 If you don't have a DS3, you don't need to install this, you are up to date with version 2_3. 
-https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ
+https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ <br>
 2022-04-21 A software update to version RPI-ECU-v2_4 is available (see changelog). Install this only when you currently use version 2_3<br>
-https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez
+https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez <br>
 2022-03-29 A software update to version RPI-ECU-v2_3 is available (see changelog). Install this only when you currently use version 2_2<br>
-https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7
+https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7 <br>
 2022-03-29 A software update to version RPI-ECU-v2_2 is available (see changelog). Install this only when you currently use version 2_1<br> https://1drv.ms/u/s!AkMG5FvUwhedizMIrXNOnCWgsIZK?e=nEqyOW see **SOFTWARE UPDATES**<br>
-2022-02-25 A software update to version RPI-ECU-v2_1 is available (see changelog). Install this only when you currently use version 2_0<br> https://1drv.ms/u/s!AkMG5FvUwhedix8xSOvp7YAxMspk?e=hgKOuf see **SOFTWARE UPDATES**
+2022-02-25 A software update to version RPI-ECU-v2_1 is available (see changelog). Install this only when you currently use version 2_0<br> https://1drv.ms/u/s!AkMG5FvUwhedix8xSOvp7YAxMspk?e=hgKOuf see **SOFTWARE UPDATES**<br>
 
 2022-04-19 The new version RPI-ECU-v2_4 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 <br><br>You can download the package here:
