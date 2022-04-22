@@ -9,7 +9,9 @@ A very important detail is the software running on the zigbee module, developped
 ## IMPORTANT TO KNOW
 People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
 So **never** put the ssh port open ttw, unless you have a very strong password.<br><br>
-The influx database system has the very annoying feature that it starts very slow, sometimes as much as 15 minutes after system boot. This means that you shouldn't backup or restore databases during this period! 
+The influx database system has the very annoying feature that it starts very slow, sometimes as much as 15 minutes after system boot. This means that you shouldn't backup or restore databases during this period!
+The values displayed on the webpage are the values reported by the inverter. In case of an inverter reset, these values start at zero so they seem to be incorrect. In the database / charts however, the values will be correct so there is no need for actions by the user.
+In case of a raspberry reboot there are initially no values written to the database, because it starts very slowly. This means that the chart of the power won't be correct. The energy value in the database will be correct the next day.
 
 ## PURPOSE
 This project is intended for reading APS Systems inverters. The program can pair and poll YC600, QS1 and DS3 inverters, up to 9 pieces. The read values are: 
@@ -32,9 +34,9 @@ https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7
 <br><br>You can download the package here:
 https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ
 <br>**instructions:** <br>
-You can burn the image on a new sd-card at any time. The backup of the old system however, and starting up / restore the new system should be done in the period after sunset and before midnight. This way we have a smooth migration. If all goes well, it wil take you 1.5 hour. If you can't get the new system running before midnight, you have to continue using your old system. make a backup the next evening and try again.
+You can burn the image on a new sd-card at any time. The backing-up of the old system however, and starting up / restoring on the new system should be done in the period after midnight and before sunrise. This way we have a smooth migration. If all goes well, it wil take you 1 hour. 
 <br><br>**backing-up your system**<br>
-Be sure that you are running version 1_5 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data.
+Be sure that you are running version 2_3 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data. You can edit the database of energy values to coreect a malformed chart.
 
 <br>**version 1:**<br>
 Only the upgrade to 1_5 matters for the backup procedure. Than you can migrate to version 2. 
