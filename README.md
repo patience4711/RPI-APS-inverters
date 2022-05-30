@@ -176,7 +176,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 ## CHANGELOG
 **version RPI-ECU-v2_6**  30 may 2022  upgrade archive
 - removed limit of 20 in database query 
-- added a value validation to prevent eratical energy values
+- added a value validation to prevent erratical energy values
 
 **version RPI-ECU-v2_5**  27 may 2022  upgrade archive
 - added dc current for the ds3 inverter
