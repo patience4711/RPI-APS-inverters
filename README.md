@@ -144,14 +144,13 @@ The zigbeemodule should be flashed with a firmware that can be found here https:
 ## WIRING ZIGBEE MODULES
 you need 5 dupont cables.
 
-**cc2530** (see wiki) <br>
+**cc2530/31** (see wiki) <br>
 p02 -> gpio14 ( pin 8 )<br>
 p03 -> gpio15 ( pin 10 )<br>
 rst -> gpio18 ( pin 12 )<br>
 vcc -> 3.3V<br>
 gnd -> g<br>
 <br>
-![RPI-ECU_WIRING](https://user-images.githubusercontent.com/12282915/148555017-c3e7a36f-6595-415f-95c7-0eb32400f2bb.jpg)
 
 hardware:<br>
 ![rpi_minhw](https://user-images.githubusercontent.com/12282915/147755635-156ec891-1dfd-4ff3-a59e-979653e1f47a.jpg)
