@@ -4,7 +4,8 @@
 
 A software for a Raspberry pi Zero and other Raspberry models to read the production of APS inverters yc600, qs1 and ds3. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol. 
-<br>**NEW april 2022** The DS3 inverter is implemented. 
+<br>**NEW april 2022** The DS3 inverter is implemented.<br><br>
+For information on building and use please see the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki)
 
 ## IMPORTANT TO KNOW
 People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
@@ -19,16 +20,18 @@ This project is intended for reading APS Systems inverters. The program can pair
 - sent via mosquitto in a Json format
 - saved in a database for charts and statistics. 
 
-## DOWNLOADS
+## DOWNLOAD SD-CARD IMAGE
+2022-04-19 A new image version RPI-ECU-v2_4 is available (see changelog). This version works with the DS3 inverter.<br>
+If you don't have a DS3, you don't need to install this, you are up to date with version 2_3. 
+https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ <br>
+## DOWNLOAD SOFTWARE UPDATES
 2022-06-08 A software update to version RPI-ECU-v2_7 is available (see changelog). Install this only when you currently use version 2_6<br>
 https://1drv.ms/u/s!AkMG5FvUwhedi0r9yS7C6Spkopzg?e=x4y9IR
 2022-05-31 A software update to version RPI-ECU-v2_6 is available (see changelog). Install this only when you currently use version 2_5<br>
 https://1drv.ms/u/s!AkMG5FvUwhedi0nkRdw0J8sN6Oea?e=QA3ML6 <br>
 2022-05-21 A software update to version RPI-ECU-v2_5 is available (see changelog). Install this only when you currently use version 2_4<br>
 https://1drv.ms/u/s!AkMG5FvUwhedi0f-bOvnSD9lo95s?e=y6FRhJ <br>
-2022-04-19 A new image version RPI-ECU-v2_4 is available (see changelog). This version works with the DS3 inverter.<br>
-If you don't have a DS3, you don't need to install this, you are up to date with version 2_3. 
-https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ <br>
+
 2022-04-21 A software update to version RPI-ECU-v2_4 is available (see changelog). Install this only when you currently use version 2_3<br>
 https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez <br>
 2022-03-29 A software update to version RPI-ECU-v2_3 is available (see changelog). Install this only when you currently use version 2_2<br>
@@ -37,22 +40,11 @@ https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7 <br>
 2022-02-25 A software update to version RPI-ECU-v2_1 is available (see changelog). Install this only when you currently use version 2_0<br> https://1drv.ms/u/s!AkMG5FvUwhedix8xSOvp7YAxMspk?e=hgKOuf see **SOFTWARE UPDATES**<br>
 
 2022-04-19 The new version RPI-ECU-v2_4 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
-<br><br>You can download the package here:
-https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ
+
 <br>**instructions:** <br>
 You can burn the image on a new sd-card at any time. The backing-up of the old system however, and starting up / restoring on the new system should be done in the period after midnight and before sunrise. This way we have a smooth migration. If all goes well, it wil take you 1 hour. 
 <br><br>**backing-up your system**<br>
-Be sure that you are running version 2_3 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data. You can edit the database of energy values to coreect a malformed chart.
-
-<br>**version 1:**<br>
-Only the upgrade to 1_5 matters for the backup procedure. Than you can migrate to version 2. 
-
-If you are currently using version **RPI-ECU-v1-4** (check the infopage) you can upgrade to version RPI-ECU-v1_5 .<br>Download the tarball here
-https://1drv.ms/u/s!AkMG5FvUwhedixKJflkO_z8JjhBo?e=IAtQ8y <br>
-This update is important if you are going to migrate to version 2_0. This version can only be installed by burning a new sd image.<br>Likely you want to backup your settings and databases first. This upgrade contains a new more reliable backup procedure.
-
-upgrade to version RPI-ECU-v1_4: https://1drv.ms/u/s!AkMG5FvUwhedixBZv4dx-B7tFCWp?e=dt1FHK <br>
-upgrade to version RPI-ECU-v1_3: https://1drv.ms/u/s!AkMG5FvUwhediwqRzRVIn_FmXms0?e=R16Nb7 <br>
+Be sure that you are running version 2_3 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data.
  
 Please see 'CHANGELOG'
 <br><br>
