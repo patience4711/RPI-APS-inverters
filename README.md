@@ -9,7 +9,7 @@ For information on building and use please see the [WIKI](https://github.com/pat
 
 ## IMPORTANT TO KNOW
 People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
-So **never** put the ssh port open ttw, unless you have a very strong password.<br><br>
+So **never** put the ssh port open 'to the world'<br><br>
 The influx database system has the very annoying feature that it starts very slow, sometimes as much as 15 minutes after system boot. This means that you shouldn't backup or restore databases during this period!
 The values displayed on the webpage are the values reported by the inverter. In case of an inverter reset, these values start at zero so they seem to be incorrect. In the database / charts however, the values will be correct so there is no need for actions by the user.
 In case of a raspberry reboot there are initially no values written to the database, because it starts very slowly. This means that the chart of the power won't be correct. The energy value in the database will be correct the next day.
