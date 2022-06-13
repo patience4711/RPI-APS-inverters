@@ -25,6 +25,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 If you don't have a DS3, you don't need to install this, you are up to date with version 2_3. 
 https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ <br>
 ## DOWNLOAD SOFTWARE UPDATES
+2022-06-13 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_6<br>
+https://1drv.ms/u/s!AkMG5FvUwhedi0tpKrre7dngEw2B?e=98fXJE
 2022-06-08 A software update to version RPI-ECU-v2_7 is available (see changelog). Install this only when you currently use version 2_6<br>
 https://1drv.ms/u/s!AkMG5FvUwhedi0r9yS7C6Spkopzg?e=x4y9IR
 2022-05-31 A software update to version RPI-ECU-v2_6 is available (see changelog). Install this only when you currently use version 2_5<br>
@@ -159,6 +161,9 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v2_8**  13 june 2022  upgrade archive
+- repaired a bug in the polling process (wrong time value)
+
 **version RPI-ECU-v2_7**  08 june 2022  upgrade archive
 - added healthcheck of influxdb 
 - fixed a bug in send a zigbeecommand
