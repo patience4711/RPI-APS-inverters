@@ -21,7 +21,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-06-14 A new image version RPI-ECU-v2_8 is available (see changelog). (waiting for some test results) <br> 
+2022-06-14 A new image version RPI-ECU-v2_8 is available (see changelog). (awaiting some test results) <br> 
 2022-04-19 A new image version RPI-ECU-v2_4 is available (see changelog). [RPI-ECU-2_4.zip](https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ) <br> This version works with the DS3 inverter.<br>
 
 ## DOWNLOAD SOFTWARE UPDATES
