@@ -26,16 +26,18 @@ If you don't have a DS3, you don't need to install this, you are up to date with
 https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ <br>
 ## DOWNLOAD SOFTWARE UPDATES
 2022-06-14 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_7<br>
-(https://1drv.ms/u/s!AkMG5FvUwhedi0w0itFjZ4A_Jc-n?e=bhabdM)
+[ecu_swupdate_14-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0w0itFjZ4A_Jc-n?e=bhabdM) <br>
 2022-06-08 A software update to version RPI-ECU-v2_7 is available (see changelog). Install this only when you currently use version 2_6<br>
-https://1drv.ms/u/s!AkMG5FvUwhedi0r9yS7C6Spkopzg?e=x4y9IR
+[ecu_swupdate_08-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0r9yS7C6Spkopzg?e=x4y9IR) <br>
 2022-05-31 A software update to version RPI-ECU-v2_6 is available (see changelog). Install this only when you currently use version 2_5<br>
-https://1drv.ms/u/s!AkMG5FvUwhedi0nkRdw0J8sN6Oea?e=QA3ML6 <br>
+[ecu_swupdate_31-05-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0nkRdw0J8sN6Oea?e=QA3ML6) <br>
 2022-05-21 A software update to version RPI-ECU-v2_5 is available (see changelog). Install this only when you currently use version 2_4<br>
-https://1drv.ms/u/s!AkMG5FvUwhedi0f-bOvnSD9lo95s?e=y6FRhJ <br>
-
+[ecu_swupdate_21-05-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0f-bOvnSD9lo95s?e=y6FRhJ) <br>
 2022-04-21 A software update to version RPI-ECU-v2_4 is available (see changelog). Install this only when you currently use version 2_3<br>
-https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez <br>
+[ecu_swupdate_21-04-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez) <br>
+2022-03-29 A software update to version RPI-ECU-v2_3 is available (see changelog). Install this only when you currently use version 2_2<br>
+[ecu_swupdate_29-03-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7 <br>
+
 2022-03-29 A software update to version RPI-ECU-v2_3 is available (see changelog). Install this only when you currently use version 2_2<br>
 https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7 <br>
 2022-03-29 A software update to version RPI-ECU-v2_2 is available (see changelog). Install this only when you currently use version 2_1<br> https://1drv.ms/u/s!AkMG5FvUwhedizMIrXNOnCWgsIZK?e=nEqyOW see **SOFTWARE UPDATES**<br>
