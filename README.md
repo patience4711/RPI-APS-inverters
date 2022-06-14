@@ -79,7 +79,7 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data. 
 So complete the next steps before sunrise in order to get a smooth migration.<br>
 **step 3**<br>
-Visit the ![WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/1-PUT-INTO-USE) for further instructions
+Visit the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/1-PUT-INTO-USE) for further instructions
 
 ## HARDWARE
 What you need for this project is:
