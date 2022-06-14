@@ -44,6 +44,7 @@ https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7 <br>
 2022-04-19 The new version RPI-ECU-v2_4 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
 <br>**instructions:** <br>
+***you are new user of this software***
 You can burn the image on a new sd-card at any time. The backing-up of the old system however, and starting up / restoring on the new system should be done in the period after midnight and before sunrise. This way we have a smooth migration. If all goes well, it wil take you 1 hour. 
 <br><br>**backing-up your system**<br>
 Be sure that you are running version 2_3 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data.
