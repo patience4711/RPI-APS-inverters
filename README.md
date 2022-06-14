@@ -21,8 +21,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-06-14 A new image version RPI-ECU-v2_8 is available (see changelog). (awaiting some test results) <br> 
-2022-04-19 A new image version RPI-ECU-v2_4 is available (see changelog). [RPI-ECU-2_4.zip](https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ) <br> This version works with the DS3 inverter.<br>
+2022-06-14 A new sd-card image version RPI-ECU-v2_8 is available (see changelog). [RPI-ECU-2_8.zip](https://1drv.ms/u/s!AkMG5FvUwhedi00Sbx7fmUVBUVkY?e=EYMF7g)<br>
+This version works with the DS3 inverter.<br>
 
 ## DOWNLOAD SOFTWARE UPDATES
 2022-06-14 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_7<br>
@@ -37,7 +37,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 [ecu_swupdate_21-04-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez) <br>
 
 
-2022-04-19 The new version RPI-ECU-v2_4 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
+2022-06-14 The new version RPI-ECU-v2_8 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
 
 Please see 'CHANGELOG'
