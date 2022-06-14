@@ -21,6 +21,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
+2022-06-14 A new image version RPI-ECU-v2_8 is available (see changelog). (waiting for some test results) <br> 
 2022-04-19 A new image version RPI-ECU-v2_4 is available (see changelog). [RPI-ECU-2_4.zip](https://1drv.ms/u/s!AkMG5FvUwhedizkqqOlZyptwBY7I?e=lpbuCQ) <br> This version works with the DS3 inverter.<br>
 
 ## DOWNLOAD SOFTWARE UPDATES
@@ -34,11 +35,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 [ecu_swupdate_21-05-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0f-bOvnSD9lo95s?e=y6FRhJ) <br>
 2022-04-21 A software update to version RPI-ECU-v2_4 is available (see changelog). Install this only when you currently use version 2_3<br>
 [ecu_swupdate_21-04-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez) <br>
-2022-04-07 A software update to version RPI-ECU-v2_3 is available (see changelog). Install this only when you currently use version 2_2<br>
-[ecu_swupdate_07-04-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7) <br>
 
-2022-03-29 A software update to version RPI-ECU-v2_2 is available (see changelog). Install this only when you currently use version 2_1<br> https://1drv.ms/u/s!AkMG5FvUwhedizMIrXNOnCWgsIZK?e=nEqyOW see **SOFTWARE UPDATES**<br>
-2022-02-25 A software update to version RPI-ECU-v2_1 is available (see changelog). Install this only when you currently use version 2_0<br> https://1drv.ms/u/s!AkMG5FvUwhedix8xSOvp7YAxMspk?e=hgKOuf see **SOFTWARE UPDATES**<br>
 
 2022-04-19 The new version RPI-ECU-v2_4 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
@@ -116,6 +113,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 ## CHANGELOG
 **version RPI-ECU-v2_8**  13 june 2022  upgrade archive
 - repaired a bug in the polling process of ds3 (wrong time value)
+- removed a bug in the powercalculation of ds3
 
 **version RPI-ECU-v2_7**  08 june 2022  upgrade archive
 - added healthcheck of influxdb 
