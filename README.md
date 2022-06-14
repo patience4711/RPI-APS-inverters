@@ -43,12 +43,7 @@ https://1drv.ms/u/s!AkMG5FvUwhedizgEDlH87A0LKjzj?e=5Lp2f7 <br>
 
 2022-04-19 The new version RPI-ECU-v2_4 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
-<br>**instructions:** <br>
-***you are new user of this software***
-You can burn the image on a new sd-card at any time. The backing-up of the old system however, and starting up / restoring on the new system should be done in the period after midnight and before sunrise. This way we have a smooth migration. If all goes well, it wil take you 1 hour. 
-<br><br>**backing-up your system**<br>
-Be sure that you are running version 2_3 or above. First ensure that the influxdb is running. So don't do this right after a reboot of your system. If you can see your charts, influx is running. The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data.
- 
+
 Please see 'CHANGELOG'
 <br><br>
 If you are currently using version **RPI-ECU-v1_1** (check the infopage) you now can upgrade to version RPI-ECU-v1_2.<br>
@@ -73,60 +68,18 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 - almost all processes show debug information, most pages have a frame for that.
 - polled values are stored in a database
 - charts of the production at multiple days are available
-- There is a page with some statistic data 
+- There is a page with statistic data 
 - The menu is only accessible from local network with login
 - software can be updated by uploading and installing a tar achive
 
-## (RE) INSTALLATION INSTRUCTIONS
+## (RE) INSTALLATION INSTRUCTIONS (see also the ![WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/home) for further instructions 
 **installation via the sd-card image**<br>
 **step 1**<br> Download the package, unzip and burn the image on an sd card. If you are new user of this software please continue with stap 3.<br>
-**step 2**<br> You already are using this software then you can make a backup of your system and databases first. You should do this after midnight. Then complete the next steps before sunrise in order to get a smooth migration.<br>
+**step 2**<br> You already are using this software then you can make a backup of your system and databases first. You should do this after midnight. 
+The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data. 
+So complete the next steps before sunrise in order to get a smooth migration.<br>
 **step 3**<br>
-Boot up with the new sd-card. Open the wifi settings on your computer/tablet/phone. 
-After a while you will see an accesspoint **RadioAP**. Connect to it with the paswd 'rpiradio'.
-<br>Now browse to http://192.168.4.1 and enter your wifi credentials as well as a userename/password
-for the security of your webpages. Click save and wait for the reboot button to appear. Click it.
-**note:** The security credentials are needed to get access to the settings of your ECU. 
-
-<br>Next the Raspberry reboots and tries to connect to your wifi. This may take a while!
-You can find your Raspberry's ip address by browsing to http://rpiecu.local.
-Or open your router's webpage to see the connected devices to find the ip address.
-Or use a wifi analizer tool on your phone/tablet.<br>
-**step 4**<br>
-The first thing to do now is to expand the filesystem. Go to the menu 'system' and click the button 'expand'.<br>
-**Important: If you want to restore a backup then, after the expansion reboot, you need to wait until the influxdb is running.** This can take as much as 15 minutes!!!! 
-By doing a query in the menu database you can find out if influx is running. If so, you can restore your system backup. 
-Check if the databases are restored by clicking a chart of the date of yesterday. 
-If that doesn't give the expected result you can try to restore the backup again.<br>
-**step 5**<br>
-If you restored a systembackup you can check the settings now.  Otherwise you should do some other configuration first. See the chapter 'SETTINGS'.
-In particular the setting of the geographical coordinates is important.
-
-## SOFTWARE UPDATES
-If the software needs updates, they are provided as a file ecu_swupdate_date.tar that you can download.
-This file can be uploaded to your system. When this succeeded you'l get a button<br>
-'install' and when pressed a script is running that unpacks the archive and replaces<br>
-the relative files. You can follow the process in the outputframe. In the chapter 'CHANGELOG' you can see
-what has been changed.
-
-## FACTORY RESET
-When i make an image of the system there are settings and data present that belong to my inverters. 
-You should edit inverter 0 with your own name and serialnr. Now go to the menu 'databases' and wipe all data for inv0 in both databases.
-If you restore a backup, the existing databases are removed and replaced by those in the backup.
-
-## SETTINGS AFTER INSTALL OF A NEW SD-CARD
-<br>In the menuitem 'settings' you have to enter the geographical coordinates of your location (google for latitude on your city). Now your system can determine
-sunset and sunrise. <br>Also enter the id nr for the zigbee coordinator, this must be a 12 character string, like D6B3011B9780<br>
-<br>Enter an offset to sunrise and sunset were the polling should start. On a bright day, the inverter may startup before sunrise. <br>
-In the journal you can see the timespan at the first poll, this is the amount of seconds the inverter is already working.
-I have an offset of -5 so i start 5 minutes before sunrise and stops 5 minutes after sunset with the polling.  
-
-## START THE ZIGBEE SYSTEM
-Check first the hardware, than go to "console" and do a healthcheck. If the zigbee coordinator is not running, check the wiring and try to start it. With the healthcheck you can see if this succeeded.
-If success you can configure an inverter, go to the menu 'inverters' and fill up / save the form. **Attention** you should provide a numeric value in the field DOM.IDX like 123, do not leave it empty or put a non-numeric value. !!! 
-Now you can try to pair this inverter, but only during daylight, the inverter will not answer when it's not working.  
-If success, this inverter will be polled automatically every 5 minutes. The data is displayed in the frontpage and charts,
-and is send via Mosquitto. At reboot all processes will be started automatically. 
+Visit the ![WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/1-PUT-INTO-USE) for further instructions
 
 ## HARDWARE
 What you need for this project is:
