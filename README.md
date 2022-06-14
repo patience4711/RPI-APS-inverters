@@ -39,14 +39,8 @@ This version works with the DS3 inverter.<br>
 
 2022-06-14 The new version RPI-ECU-v2_8 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
-
 Please see 'CHANGELOG'
 <br><br>
-If you are currently using version **RPI-ECU-v1_1** (check the infopage) you now can upgrade to version RPI-ECU-v1_2.<br>
-Download the tarball here https://1drv.ms/u/s!AkMG5FvUwhediwMEziqX7Kv8eWEC?e=K5FKcC <br>
-In the menu 'system' you'l find the option 'update'. Click this and choose the downloaded file.
-If you get an error about the filename, try to rename it to ecu_swupdate.tar. <br>
-Please see 'CHANGELOG'
 
 See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>
