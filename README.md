@@ -56,7 +56,7 @@ See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>
 In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaPqGYXa7vMkXp8?e=kzkdHQ<br><br>
 **Some webpages:**<br>
-![pages_rpiecu](https://user-images.githubusercontent.com/12282915/147755570-db00c49e-3033-42b2-bb68-8bbb9a003e33.jpg)
+![compilation](https://user-images.githubusercontent.com/12282915/173093515-dbf569fb-15c9-4313-9357-b50f7c96683b.jpg)
 <br><br>
 ## FEATURES:
 - all inverter information such as temperature, dc voltage etc available
