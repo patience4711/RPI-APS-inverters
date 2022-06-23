@@ -25,6 +25,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 This version works with the DS3 inverter.<br>
 
 ## DOWNLOAD SOFTWARE UPDATES
+2022-06-23 A software update to version RPI-ECU-v2_9 is available (see changelog). Install this only when you currently use version 2_8<br>
+[ecu_swupdate_23-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1N5HHSwSlxo3XOc?e=JTbYdM) <br>
 2022-06-14 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_7<br>
 [ecu_swupdate_14-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0w0itFjZ4A_Jc-n?e=bhabdM) <br>
 2022-06-08 A software update to version RPI-ECU-v2_7 is available (see changelog). Install this only when you currently use version 2_6<br>
@@ -105,6 +107,11 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v2_9**  13 june 2022  upgrade archive
+- added some http requests ( trigger polling and retrieve data)
+- changed the main page (now a clickable list of all inverters and data)
+- repaired a bug in the inverters administration (delete process)
+
 **version RPI-ECU-v2_8**  13 june 2022  upgrade archive
 - repaired a bug in the polling process of ds3 (wrong time value)
 - removed a bug in the powercalculation of ds3
