@@ -107,7 +107,7 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v2_9**  13 june 2022  upgrade archive
+**version RPI-ECU-v2_9**  23 june 2022  upgrade archive
 - added some http requests ( trigger polling and retrieve data)
 - changed the main page (now a clickable list of all inverters and data)
 - repaired a bug in the inverters administration (delete process)
