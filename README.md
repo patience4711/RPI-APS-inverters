@@ -108,7 +108,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 
 ## CHANGELOG
 **version RPI-ECU-v2_9**  23 june 2022  upgrade archive
-- added some http requests ( trigger polling and retrieve data)
+- added a http requests to retrieve inverter data
 - changed the main page (now a clickable list of all inverters and data)
 - repaired a bug in the inverters administration (delete process)
 
