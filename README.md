@@ -21,10 +21,13 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-06-14 A new sd-card image version RPI-ECU-v2_8 is available (see changelog). [RPI-ECU-2_8.zip](https://1drv.ms/u/s!AkMG5FvUwhedi00Sbx7fmUVBUVkY?e=EYMF7g)<br>
+2022-06-30 A new sd-card image version RPI-ECU-v3_0 is available (see changelog). [RPI-ECU-3_0.zip](https://1drv.ms/u/s!AkMG5FvUwhedi1StG9734oOcMcRA?e=xlnuUq)<br>
 This version works with the DS3 inverter.<br>
 
 ## DOWNLOAD SOFTWARE UPDATES
+
+2022-06-30 A software update to version RPI-ECU-v3_0 is available (see changelog). Install this only when you currently use version 2_9<br>
+[ecu_swupdate-v3_0.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1WZSjk2R9WrGxhn?e=OZolFW) <br>
 2022-06-23 A software update to version RPI-ECU-v2_9 is available (see changelog). Install this only when you currently use version 2_8<br>
 [ecu_swupdate-v2_9.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1N5HHSwSlxo3XOc?e=JTbYdM) <br>
 2022-06-14 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_7<br>
@@ -39,7 +42,7 @@ This version works with the DS3 inverter.<br>
 [ecu_swupdate_21-04-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez) <br>
 
 
-2022-06-14 The new version RPI-ECU-v2_8 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
+2022-06-30 The new version RPI-ECU-v3_0 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
 Please see 'CHANGELOG'
 <br><br>
@@ -107,6 +110,10 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v3_0**  30 june 2022  upgrade archive or sd image
+- removed the http poll trigger.
+- changed the navigation and the appearance of some pages
+
 **version RPI-ECU-v2_9**  23 june 2022  upgrade archive
 - added a http requests to retrieve inverter data
 - changed the main page (now a clickable list of all inverters and data)
