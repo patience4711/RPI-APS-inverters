@@ -25,6 +25,10 @@ This project is intended for reading APS Systems inverters. The program can pair
 This version works with the DS3 inverter.<br>
 
 ## DOWNLOAD SOFTWARE UPDATES
+2022-06-30 A software update to version RPI-ECU-v3_1 is available (see changelog). You can install this on any version.<br>
+[soon available ecu_swupdate-v3_1.tar](soon available) <br>
+**instruction:** this update should be installed twice!. The second time the apache server will be restarted. The information window will be greyed out than.
+From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. Another advantage is that we can roll back to a previous version. 
 
 2022-06-30 A software update to version RPI-ECU-v3_0 is available (see changelog). Install this only when you currently use version 2_9<br>
 [ecu_swupdate-v3_0.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1WZSjk2R9WrGxhn?e=OZolFW) <br>
