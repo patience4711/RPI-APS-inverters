@@ -118,9 +118,10 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 **version RPI-ECU-v3_1 and 3_2**  12 july 2022  upgrade archive
 - Decreased the sd-card writing by tweaking log settings
 - moved a frequently written var to ramdisk
-- improved the navigation and the appearance of some pages
+- improved the navigation and the appearance charts small screens
 - improved security by disabling page viewing for all ottw pages
 - improved the software upgrading process
+- added mosquitto option for authentication
 
 **version RPI-ECU-v3_0**  30 june 2022  upgrade archive or sd image
 - removed the http poll trigger.
