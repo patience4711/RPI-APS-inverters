@@ -21,12 +21,12 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-06-30 A new sd-card image version RPI-ECU-v3_0 is available (see changelog). [RPI-ECU-3_0.zip](https://1drv.ms/u/s!AkMG5FvUwhedi1StG9734oOcMcRA?e=xlnuUq)<br>
-This version works with the DS3 inverter.<br>
+2022-07-13 A new sd-card image version RPI-ECU-v3_2 is available (see changelog). [RPI-ECU-3_2.zip](https://1drv.ms/u/s!AkMG5FvUwhedi1niX6YkpguOBqU2?e=OzwCRT)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+<br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2022-07-12: Two software updates to version RPI-ECU-v3_1 and RPI-ECU-v3_1 are available (see changelog). <br>You can install this on any version but please follow the instruction.<br>
-[ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=pJ69Wb) <br>
+2022-07-12: Two software updates to version RPI-ECU-v3_1 and RPI-ECU-v3_2 are available (see changelog). <br>You can install v3-1 on any version but please follow the instruction.<br>
+[ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=pJ69Wb) (prepare for new upgrade process)<br>
 [ecu_swupdate-v3_2.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1gGtMjJ8Ml-8lLB?e=i34PUj) <br>
 **instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_2.
 From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. Another advantage is that we can roll back to a previous version.  
@@ -37,16 +37,8 @@ From now on, the latest update will completely update your system to the newest 
 [ecu_swupdate-v2_9.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1N5HHSwSlxo3XOc?e=JTbYdM) <br>
 2022-06-14 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_7<br>
 [ecu_swupdate_14-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0w0itFjZ4A_Jc-n?e=bhabdM) <br>
-2022-06-08 A software update to version RPI-ECU-v2_7 is available (see changelog). Install this only when you currently use version 2_6<br>
-[ecu_swupdate_08-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0r9yS7C6Spkopzg?e=x4y9IR) <br>
-2022-05-31 A software update to version RPI-ECU-v2_6 is available (see changelog). Install this only when you currently use version 2_5<br>
-[ecu_swupdate_31-05-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0nkRdw0J8sN6Oea?e=QA3ML6) <br>
-2022-05-21 A software update to version RPI-ECU-v2_5 is available (see changelog). Install this only when you currently use version 2_4<br>
-[ecu_swupdate_21-05-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0f-bOvnSD9lo95s?e=y6FRhJ) <br>
-2022-04-21 A software update to version RPI-ECU-v2_4 is available (see changelog). Install this only when you currently use version 2_3<br>
-[ecu_swupdate_21-04-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedizqYIS5MOefFfNyo?e=iCehez) <br>
 
-2022-06-30 The new version RPI-ECU-v3_0 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you upgraded to version RPI-ECU-v2_3. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
+2022-07-13 The new version RPI-ECU-v3_2 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
 Please see 'CHANGELOG'
 <br><br>
@@ -55,14 +47,14 @@ See it in action on youtube: https://youtu.be/oF-QE4GUGy8
 <br><br>
 In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaPqGYXa7vMkXp8?e=kzkdHQ<br><br>
 **Some webpages:**<br>
-![compilation](https://user-images.githubusercontent.com/12282915/173093515-dbf569fb-15c9-4313-9357-b50f7c96683b.jpg)
-<br><br>
+![Examples](https://user-images.githubusercontent.com/12282915/178716054-1f1b1dc6-aacc-4af8-b223-d38e03e35578.jpg)
+<br>
 ## FEATURES:
 - all inverter information such as temperature, dc voltage etc available
 - energy production per solar panel displayed
+- values are transferred via Mqtt in user defined json formats
 - Easy wifi config portal
 - Easy add, delete and pair inverters
-- There are 3 different json formats, a special one for domoticz
 - a very smart console to send zigbee commands and debug
 - almost all processes show debug information, most pages have a frame for that.
 - polled values are stored in a database
@@ -114,13 +106,13 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v3_1 and 3_2**  12 july 2022  upgrade archive
+**version RPI-ECU-v3_1 and 3_2**  12 july 2022  upgrade archive and SDcard image:
 - Decreased the sd-card writing by tweaking log settings
-- moved a frequently written var to ramdisk
-- improved the navigation and the appearance charts small screens
-- improved security by disabling page viewing for all ottw pages
-- improved the software upgrading process
-- added mosquitto option for authentication
+- moved a frequently written variable to ramdisk
+- improved the navigation and the appearance of charts in small screens
+- improved security by disabling page viewing for all o.t.t.w. pages
+- improved the swupgrading process, now possible to replace whole directories.
+- added option for authentication in mosquitto
 
 **version RPI-ECU-v3_0**  30 june 2022  upgrade archive or sd image
 - removed the http poll trigger.
