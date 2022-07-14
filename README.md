@@ -21,13 +21,13 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-07-13 A new sd-card image version RPI-ECU-v3_2 is available (see changelog). [RPI-ECU-3_2.zip](https://1drv.ms/u/s!AkMG5FvUwhedi1zgX4RUEzwj7uf4?e=od81cz)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2022-07-13 A new sd-card image version RPI-ECU-v3_2 is available (see changelog). [RPI-ECU-3_2.zip soon avialable]()<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
 2022-07-12: Two software updates to version RPI-ECU-v3_1 and RPI-ECU-v3_2 are available (see changelog). <br>You can install v3-1 on any version but please follow the instruction.<br>
-[ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=pwjV4f) (prepare for new upgrade process)<br>
-[ecu_swupdate-v3_2.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1sdUEj0CeMQz0C6?e=fzlaYe) <br>
+[ecu_swupdate-v3_1.tar coming soon]() (prepare for new upgrade process)<br>
+[ecu_swupdate-v3_2.tar coming soon]() <br>
 **instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_2.
 From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. After you installed v3_2 you may experience some misbehaviour. You need to reboot for some settings to effectuate, so it's best to do this after the polling stopped. Or wait until next day, during healthcheck at night, this will be fixed.
 
