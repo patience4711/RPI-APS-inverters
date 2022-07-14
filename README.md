@@ -29,7 +29,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 [ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=pwjV4f) (prepare for new upgrade process)<br>
 [ecu_swupdate-v3_2.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1sdUEj0CeMQz0C6?e=fzlaYe) <br>
 **instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_2.
-From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. After you installed v3_2 you may experience some misbehaviour. Yeed to reboot for some settings to effectuate, so it's best to do this after the polling stopped. Or wait until next day, during healthcheck at night, this will be fixed.
+From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. After you installed v3_2 you may experience some misbehaviour. You need to reboot for some settings to effectuate, so it's best to do this after the polling stopped. Or wait until next day, during healthcheck at night, this will be fixed.
 
 2022-06-30 A software update to version RPI-ECU-v3_0 is available (see changelog). Install this only when you currently use version 2_9<br>
 [ecu_swupdate-v3_0.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1WZSjk2R9WrGxhn?e=OZolFW) <br>
