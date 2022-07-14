@@ -21,7 +21,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-07-13 A new sd-card image version RPI-ECU-v3_2 is available (see changelog). [RPI-ECU-3_2.zip soon avialable]()<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2022-07-13 A new sd-card image version RPI-ECU-v3_2 is available (see changelog). [RPI-ECU-3_2.zip](https://1drv.ms/u/s!AkMG5FvUwhedi1zgX4RUEzwj7uf4?e=nTDTkE)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
@@ -29,7 +29,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 [ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=6PqitR) (prepare for new upgrade process)<br>
 [ecu_swupdate-v3_2.tar coming soon](https://1drv.ms/u/s!AkMG5FvUwhedi10i_YAc0JmXmXyE?e=RINTHD) <br>
 **instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_2.
-From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. After you installed v3_2 you may experience some misbehaviour. You need to reboot for some settings to effectuate, so it's best to do this after the polling stopped. Or wait until next day, during healthcheck at night, this will be fixed.
+From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. After you checked the upgrade process please go to the homepage and refresh it.
 
 2022-06-30 A software update to version RPI-ECU-v3_0 is available (see changelog). Install this only when you currently use version 2_9<br>
 [ecu_swupdate-v3_0.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1WZSjk2R9WrGxhn?e=OZolFW) <br>
