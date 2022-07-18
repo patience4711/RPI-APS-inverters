@@ -112,6 +112,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 - improved the navigation and the appearance of charts in small screens
 - improved security by disabling page viewing for all o.t.t.w. pages
 - improved the swupgrading process, now possible to replace whole directories.
+- improved the datase backup and restore processes.
 - added option for authentication in mosquitto
 
 **version RPI-ECU-v3_0**  30 june 2022  upgrade archive or sd image
