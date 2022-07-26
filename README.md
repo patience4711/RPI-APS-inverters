@@ -23,7 +23,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-07-18 A new sd-card image version RPI-ECU-v3_2 is available (see changelog). [RPI-ECU-3_2.zip](https://1drv.ms/u/s!AkMG5FvUwhedi1853fva9Khn-xau?e=wx5yAb)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2022-07-26 A new sd-card image version RPI-ECU-v3_3 is available (see changelog). [RPI-ECU-3_3.zip](https://1drv.ms/u/s!AkMG5FvUwhedi2Q8wZF38TE_Kslp?e=qGLaf8)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
@@ -108,7 +108,10 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v3_1 and 3_2**  12 july 2022  upgrade archive and SDcard image:
+**version RPI-ECU-v3_3 27 july 2022 sdcard image:
+- installed zram-swap for better system performance
+- added a memo utility to remember certain events
+**version RPI-ECU-v3_1 and 3_2**  12 july 2022  upgrade archive:
 - Decreased the sd-card writing by tweaking log settings
 - moved a frequently written variable to ramdisk
 - improved the navigation and the appearance of charts in small screens
