@@ -108,17 +108,18 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v3_3 27 july 2022 sdcard image:
+**version RPI-ECU-v3_3** 27 july 2022 sdcard image:
 - installed zram-swap for better system performance
 - added a memo utility to remember certain events
-**version RPI-ECU-v3_1 and 3_2**  12 july 2022  upgrade archive:
+
+**version RPI-ECU-v3_1 and 3_3**  27 july 2022  upgrade archive:
 - Decreased the sd-card writing by tweaking log settings
 - moved a frequently written variable to ramdisk
 - improved the navigation and the appearance of charts in small screens
 - improved security by disabling page viewing for all o.t.t.w. pages
 - improved the swupgrading process, now possible to replace whole directories.
 - improved the datase backup and restore processes.
-- added option for authentication in mosquitto
+- added an option for authentication in mosquitto
 
 **version RPI-ECU-v3_0**  30 june 2022  upgrade archive or sd image
 - removed the http poll trigger.
