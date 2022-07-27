@@ -113,6 +113,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 - installed zram-swap for better system performance
 - added a memo utility to remember certain events
 - restore some privileges at bootup 
+- prevent overwriting of the photo at swupgrade
 - Decreased the sd-card writing by tweaking log settings
 - moved a frequently written variable to ramdisk
 - improved the navigation and the appearance of charts in small screens
