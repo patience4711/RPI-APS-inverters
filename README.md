@@ -10,7 +10,7 @@ For information on building and use please see the [WIKI](https://github.com/pat
 ## IMPORTANT TO KNOW
 People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
 So **never** put the ssh port open 'to the world'<br><br>
-If you experience speed problems after upgrading to 3_2, you can install zswap, please see the [wiki](https://github.com/patience4711/RPI-APS-inverters/wiki/TROUBLESHOOTING#system-seems-slow)
+If you experience speed problems after upgrading to 3_2 or above, you can install zswap, please see the [wiki](https://github.com/patience4711/RPI-APS-inverters/wiki/TROUBLESHOOTING#system-seems-slow)
 
 The influx database system has the very annoying feature that it starts very slow, sometimes as much as 15 minutes after system boot. This means that you shouldn't backup or restore databases during this period!
 The values displayed on the webpage are the values reported by the inverter. In case of an inverter reset, these values start at zero so they seem to be incorrect. In the database / charts however, the values will be correct so there is no need for actions by the user.
@@ -27,11 +27,11 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2022-07-12: Two software updates to version RPI-ECU-v3_1 and RPI-ECU-v3_2 are available (see changelog). <br>You can install v3-1 on any version but please follow the instruction.<br>
+2022-07-12: Two software updates to version RPI-ECU-v3_1 and RPI-ECU-v3_3 are available (see changelog). <br>You can install v3-1 on any version but please follow the instruction.<br>
 [ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=6PqitR) (set permissions and prepare for new upgrade process)<br>
-[ecu_swupdate-v3_2c.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2I-DrRNKN_tNFqj?e=9U1ULo) <br>
-**instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_2.
-From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_2. After you checked the upgrade process please go to the homepage and refresh it.
+[ecu_swupdate-v3_3.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2XvVte6ljS9Cc8G?e=d0omq6) <br>
+**instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_3.
+From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_3. After you checked the upgrade process please go to the homepage and refresh it.
 
 2022-06-30 A software update to version RPI-ECU-v3_0 is available (see changelog). Install this only when you currently use version 2_9<br>
 [ecu_swupdate-v3_0.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1WZSjk2R9WrGxhn?e=OZolFW) <br>
