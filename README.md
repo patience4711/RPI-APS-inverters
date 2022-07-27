@@ -64,6 +64,7 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 - There is a page with statistic data 
 - The menu is only accessible from local network with login
 - software can be updated by uploading and installing a tar achive
+- data can be requested via a direct link like 'ip_of_ecu/recovery/getInverter.php?inv=x'
 
 ## (RE) INSTALLATION INSTRUCTIONS (see also the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/home) for further instructions) 
 **installation via the sd-card image**<br>
