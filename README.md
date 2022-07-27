@@ -112,6 +112,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 **version RPI-ECU-v3_3** 27 july 2022 sdcard image:
 - installed zram-swap for better system performance
 - added a memo utility to remember certain events
+- restore some privileges at bootup 
 
 **version RPI-ECU-v3_1 and 3_3**  27 july 2022  upgrade archive:
 - Decreased the sd-card writing by tweaking log settings
