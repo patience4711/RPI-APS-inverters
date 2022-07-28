@@ -12,6 +12,8 @@ People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware
 So **never** put the ssh port open 'to the world'<br><br>
 If you experience speed problems after upgrading to 3_2 or above, you can install zswap, please see the [wiki](https://github.com/patience4711/RPI-APS-inverters/wiki/TROUBLESHOOTING#system-seems-slow)
 
+From outside your network you won't see the menu link. Maintenance can only be done from inside your own network.
+
 The influx database system has the very annoying feature that it starts very slow, sometimes as much as 15 minutes after system boot. This means that you shouldn't backup or restore databases during this period!
 The values displayed on the webpage are the values reported by the inverter. In case of an inverter reset, these values start at zero so they seem to be incorrect. In the database / charts however, the values will be correct so there is no need for actions by the user.
 In case of a raspberry reboot there are initially no values written to the database, because it starts very slowly. This means that the chart of the power won't be correct. The energy value in the database will be correct the next day.
@@ -23,13 +25,13 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2022-07-26 A new sd-card image version RPI-ECU-v3_3 is available (see changelog). [RPI-ECU-3_3.zip](https://1drv.ms/u/s!AkMG5FvUwhedi2fCMBm6rPbzx1iu?e=45LEoJ)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2022-07-26 A new sd-card image version RPI-ECU-v3_3 is available (see changelog). [RPI-ECU-3_3.zip]()<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
 2022-07-12: Two software updates to version RPI-ECU-v3_1 and RPI-ECU-v3_3 are available (see changelog). <br>You can install v3-1 on any version but please follow the instruction.<br>
 2022-07-12:[ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=6PqitR) (set permissions and prepare for new upgrade process)<br>
-2022-07-27:[ecu_swupdate-v3_3.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2iBNf1cczs9qEu1?e=UO5J7i) <br>
+2022-07-27:[ecu_swupdate-v3_3.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2qkmP1ai7aFE7M1?e=jS25pk) <br>
 **instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_3.
 From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_3. After you checked the upgrade process please go to the homepage and refresh it.
 
