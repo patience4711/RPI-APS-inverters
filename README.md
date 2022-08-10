@@ -29,11 +29,11 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2022-07-12: Two software updates to version RPI-ECU-v3_1 and RPI-ECU-v3_3 are available (see changelog). <br>You can install v3-1 on any version but please follow the instruction.<br>
+2022-08-10: [ecu_swupdate-v3_4.tar](https://1drv.ms/u/s!AkMG5FvUwhedi251LaQ1sNznynvi?e=4QQQih) is available. Install this only when you have at least vesion 3_1 installed.<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
+2022-07-12: A software update to version RPI-ECU-v3_1 is available (see changelog). This is a special update that prepares the system for a new update process. <br>You can install v3-1 on any version but please follow the instruction.<br>
 2022-07-12:[ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=6PqitR) (set permissions and prepare for new upgrade process)<br>
-2022-07-27:[ecu_swupdate-v3_3.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2zCeAK_BxRQeR7k?e=EA1k56) <br>
-**instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. You should now install v3_3.
-From now on, the latest update will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now install 3_1 (2 times!) and than 3_3. After you checked the upgrade process please go to the homepage and refresh it.
+**instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. When done you don't need to do this again, you now can install higher versions.
+From now on, the latest software upgrade will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now if you installed 3_1 (2 times!) and than 3_4, you are completely up-to-date. After you checked the upgrade process please go to the homepage and refresh it.
 
 2022-06-30 A software update to version RPI-ECU-v3_0 is available (see changelog). Install this only when you currently use version 2_9<br>
 [ecu_swupdate-v3_0.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1WZSjk2R9WrGxhn?e=OZolFW) <br>
@@ -42,7 +42,7 @@ From now on, the latest update will completely update your system to the newest 
 2022-06-14 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_7<br>
 [ecu_swupdate_14-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0w0itFjZ4A_Jc-n?e=bhabdM) <br>
 
-2022-07-13 The new version RPI-ECU-v3_2 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
+2022-08-10 The sd-card image RPI-ECU-v3_3 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
 
 Please see 'CHANGELOG'
 <br><br>
@@ -111,6 +111,10 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v3_4** 10 aug 2022 upgrade archive:
+- repaired a small bug in the inverter details page
+- improved the navigation/cosmetics and chart of the daily energy.
+
 **version RPI-ECU-v3_3** 27 july 2022 sdcard image and upgrade archive:
 - installed zram-swap for better system performance
 - added a memo utility to remember certain events
