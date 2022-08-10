@@ -31,10 +31,10 @@ This project is intended for reading APS Systems inverters. The program can pair
 ## DOWNLOAD SOFTWARE UPDATES
 2022-08-10: [ecu_swupdate-v3_4.tar](https://1drv.ms/u/s!AkMG5FvUwhedi251LaQ1sNznynvi?e=4QQQih) is available. Install this only when you have at least vesion 3_1 installed.<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 If you feel that your system is somewhat slow or less reactive, you can install 'ZRAM', just like a normal software upgrade. <br>
-You can download this software patch here: [ecu_swupgrade_zram.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2PFOUDRJR9RuR7y?e=URMg97). It is included in sd-card image 3_3<br>
+You can download this software patch here: [ecu_swupgrade_zram.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2PFOUDRJR9RuR7y?e=URMg97). It is included in sd-card image 3_3.<br>
 
 2022-07-12: A software update to version RPI-ECU-v3_1 is available (see changelog). This is a special update that prepares the system for a new update process. <br>You can install (and should) v3-1 on any version but please follow the instruction.<br>
-2022-07-12:[ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=6PqitR) (set permissions and prepare for new upgrade process)<br>
+2022-07-12: [ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=6PqitR) (set permissions and prepare for new upgrade process)<br>
 **instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. When done you don't need to do this again, you now can install higher versions.
 From now on, the latest software upgrade will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now if you installed 3_1 (2 times!) and than 3_4, you are completely up-to-date. After you checked the upgrade process please go to the homepage and refresh it.
 
