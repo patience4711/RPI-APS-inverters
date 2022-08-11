@@ -29,7 +29,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2022-08-10: [ecu_swupdate-v3_4.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2-YsKle0usyevDM?e=QcMK2Y) is available. Install this only when you have at least vesion 3_1 installed.<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
+2022-08-10: [ecu_swupdate-v3_4.tar](https://1drv.ms/u/s!AkMG5FvUwhedi3DxujHWNpFRmRMA?e=0nWKo1) is available (see changelog). Install this only when you have at least vesion 3_1 installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 If you feel that your system is somewhat slow or less reactive, you can install 'ZRAM', just like a normal software upgrade. <br>
 You can download this software patch here: [ecu_swupgrade_zram.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2PFOUDRJR9RuR7y?e=URMg97). It is included in sd-card image 3_3.<br>
 
@@ -115,6 +115,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 
 ## CHANGELOG
 **version RPI-ECU-v3_4** 10 aug 2022 upgrade archive:
+- fixed null values for energy due to inverter resets at sunset.
 - repaired a small bug in the inverter details page
 - improved the navigation/cosmetics and chart of the daily energy.
 
