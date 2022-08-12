@@ -29,7 +29,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2022-08-10: [ecu_swupdate-v3_4.tar](https://1drv.ms/u/s!AkMG5FvUwhedi3HMWijBq9JoGlM-?e=2Sau12) is available (see changelog). Install this only when you have at least vesion 3_1 installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
+2022-08-10: [ecu_swupdate-v3_4.tar](https://1drv.ms/u/s!AkMG5FvUwhedi3JqKuNvwXcFEA4Z?e=VpUcc4) is available (see changelog). Install this only when you have at least vesion 3_1 installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 If you feel that your system is somewhat slow or less reactive, you can install 'ZRAM', just like a normal software upgrade. <br>
 You can download this software patch here: [ecu_swupgrade_zram.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2PFOUDRJR9RuR7y?e=URMg97). It is included in sd-card image 3_3.<br>
 
