@@ -29,7 +29,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2022-10-03: [ecu_swupdate-v3_6.tar](https://1drv.ms/u/s!AkMG5FvUwhedi39AZIimtzmosdU8?e=9ArqOZ)) is available (see changelog). Install this only when you have version 3_1 or higher installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
+2022-10-03: [ecu_swupdate-v3_6.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_6.tar) is available (see changelog). Install this only when you have version 3_1 or higher installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 2022-08-13: [ecu_swupdate-v3_5.tar](https://1drv.ms/u/s!AkMG5FvUwhedi3O0Dk-Le4xixo64?e=ThJIWi) is available (see changelog). Install this only when you have at least vesion 3_1 installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 
 If you feel that your system is somewhat slow or less reactive, you can install 'ZRAM', just like a normal software upgrade. <br>
