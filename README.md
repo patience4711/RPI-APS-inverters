@@ -29,8 +29,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
+2022-03-14:[ecu_swupdate-v3_7.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_7.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 2022-10-03: [ecu_swupdate-v3_6.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_6.tar) is available (see changelog). Install this only when you have version 3_1 or higher installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
-2022-08-13: [ecu_swupdate-v3_5.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_5.tar) is available (see changelog). Install this only when you have at least vesion 3_1 installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 
 If you feel that your system is somewhat slow or less reactive, you can install 'ZRAM', just like a normal software upgrade. <br>
 You can download this software patch here: [ecu_swupgrade_zram.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2PFOUDRJR9RuR7y?e=URMg97). It is included in sd-card image 3_3.<br>
@@ -116,6 +116,10 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v3_7** 14 feb 2023 upgrade archive:
+- added retainflag to Mosquitto.
+- added the option to have a separate mqtt topic for each inverter.
+ 
 **version RPI-ECU-v3_6** 03 oct 2022 upgrade archive:
 - added 2 more mqtt json formats (values as float).
 - added a zigbee signal quality value (shown in the journal).
