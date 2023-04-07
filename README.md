@@ -7,7 +7,7 @@ A very important detail is the software running on the zigbee module, developped
 <br>**NEW april 2022** The DS3 inverter is implemented.<br><br>
 For information on building and use please see the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki)
 
-See it in action on [youtube](https://youtu.be/RRO6AWNoodY)
+See it in action on [YouTube](https://youtu.be/RRO6AWNoodY)
 
 ## IMPORTANT TO KNOW
 People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
