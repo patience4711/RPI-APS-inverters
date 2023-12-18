@@ -119,8 +119,8 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v3_9** 14 dec 2023 upgrade archive:
-- fixed an error (panels 0 and 1 if yc600 and QS1 were swapped).
+**version RPI-ECU-v3_9** 18 dec 2023 upgrade archive:
+- fixed an error (panels 0 and 1 of yc600 were swapped).
 
 **version RPI-ECU-v3_8** 9 oct 2023 upgrade archive:
 - fixed a bug that confused dcv's for ds3 inverters
