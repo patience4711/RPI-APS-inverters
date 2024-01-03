@@ -27,7 +27,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2023-12-23 A new sd-card image version RPI-ECU-v3_9 is available (see changelog). [RPIECU-v3_9a.zip](https://1drv.ms/u/s!AkMG5FvUwhedjUbn1qE-kM1S9Vtd?e=93ENBN)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2024-01-03 A new sd-card image version RPI-ECU-v3_9 is available (see changelog). [RPIECU-v3_9.zip](https://1drv.ms/u/s!AkMG5FvUwhedjUfJUVI9IkgOy_pH?e=6WqfNy)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
@@ -121,6 +121,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 ## CHANGELOG
 **version RPI-ECU-v3_9** 18 dec 2023 upgrade archive:
 - fixed an error (panels 0 and 1 of yc600 were swapped).
+- fixed a problem with send zigbee commands on rpi zero 2
 
 **version RPI-ECU-v3_8** 9 oct 2023 upgrade archive:
 - fixed a bug that confused dcv's for ds3 inverters
