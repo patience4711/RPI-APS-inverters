@@ -31,7 +31,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2022-12-14: [ecu_swupdate-v3_9.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_9.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
+2023-01-08: [ecu_swupdate-v3_9.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_9.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 2022-10-09: [ecu_swupdate-v3_8.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-3_8.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 2022-03-14: [ecu_swupdate-v3_7.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_7.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 2022-10-03: [ecu_swupdate-v3_6.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_6.tar) is available (see changelog). Install this only when you have version 3_1 or higher installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
@@ -119,9 +119,10 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v3_9** 18 dec 2023 upgrade archive:
+**version RPI-ECU-v3_9** 8 jan 2024 upgrade archive:
 - fixed an error (panels 0 and 1 of yc600 were swapped).
 - fixed a problem with send zigbee commands on rpi zero 2
+- improved webinterface appearance on mobile devices
 
 **version RPI-ECU-v3_8** 9 oct 2023 upgrade archive:
 - fixed a bug that confused dcv's for ds3 inverters
