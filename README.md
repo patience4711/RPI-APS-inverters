@@ -4,7 +4,7 @@
 
 A software for a Raspberry pi Zero and other Raspberry models to read the production of APS inverters yc600, qs1 and ds3. I should mention that the basics (the zigbee communication) has been reverse engineered by others who shared their results here: https://github.com/Koenkk/zigbee2mqtt/issues/4221<br>
 A very important detail is the software running on the zigbee module, developped by @kadzsol. 
-<br>**NEW april 2022** The DS3 inverter is implemented.<br><br>
+<br><br>
 For information on building and use please see the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki)
 
 See it in action on [YouTube](https://youtu.be/sTnKeFcmqhc)
@@ -12,7 +12,7 @@ See it in action on [YouTube](https://youtu.be/sTnKeFcmqhc)
 ## IMPORTANT TO KNOW
 People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
 So **never** put the ssh port open 'to the world'<br><br>
-If you experience speed problems after upgrading to 3_2 or above, you can install zswap, please see the [wiki](https://github.com/patience4711/RPI-APS-inverters/wiki/TROUBLESHOOTING#system-seems-slow)
+The software can be updated by installing an upgrade tar file. Please see the wiki.
 
 From outside your network you won't see the menu link. Maintenance can only be done from inside your own network.
 
