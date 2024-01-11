@@ -120,7 +120,7 @@ can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started
 
 ## CHANGELOG
 **version RPI-ECU-v3_10** jan 9 2024 upgrade archive:
-- optiaized webinterface appearance on mobile devices
+- optiaized webinterface performance/appearance on mobile devices
 
 **version RPI-ECU-v3_9** dec 22 2023 upgrade archive:
 - fixed an error (panels 0 and 1 of yc600 were swapped).
