@@ -32,9 +32,8 @@ string checkSumString(char Command[])
 char bufferCRC[254] = {0};
 char bufferCRC_2[254] = {0};
 
-    strncpy(bufferCRC, Command, 2); //as starting point perhaps called "seed" use the first two chars from "Command"
-    delayMicroseconds(250);         //give memset a little bit of time to empty all the buffers
-
+    strncpy(bufferCRC, Command, 2); 
+   
     for (uint8_t i = 1; i <= (strlen(Command) / 2 - 1); i++)
     {
         strncpy(bufferCRC_2, Command + i * 2, 2); //use every iteration the next two chars starting with char 2+3
@@ -135,21 +134,19 @@ int main (int argc, char **argv)
     cout << "unable to open serial_port serial0\n<br>" << endl;
     return(0);
   }
-  // construct the command now we put len and checksum
+  
+    // construct the command now we put len and checksum
 
- //    strncpy(initCmd, strncat(sLen(initCmd), initCmd, sizeof(sLen(initCmd)) + sizeof(initCmd)));
-   sprintf(bufferSend, "%02X", (strlen(initCmd) / 2 - 2)); //now contains a hex representation of the length 
+   sprintf(bufferSend, "%02X", (strlen(initCmd) / 2 - 2)); //now starts with a hex representation of the length 
    strcat(bufferSend, initCmd); // now put slen and the rest together
-   strcat(bufferSend, checkSumString(bufferSend).c_str());
-   //strcpy(initCmd, strcat(sLen(initCmd), initCmd));
-   // strcpy(initCmd, strncat(initCmd, checkSum(initCmd), sizeof(initCmd) + sizeof(checkSum(initCmd))));
+   strcat(bufferSend, checkSumString(bufferSend).c_str()); //add the crc
 
-    cout << "command incl. FE, len and crc = FE" << bufferSend << "\n<br>" << endl;
+   cout << "command incl. FE, len and crc = FE" << bufferSend << "\n<br>" << endl;
            
-    sendZigbee(bufferSend);  
-    delay(3);
-    waitSerialAvailable();
-// test the loopback
+   sendZigbee(bufferSend);  
+   delay(3);
+   waitSerialAvailable();
+   // get the answer
     readZigbee();
     if(readCounter > 2) 
     {
@@ -157,11 +154,9 @@ int main (int argc, char **argv)
     } else {
        cout << "no answer\n<br>" << inMessage << endl;
     } 
-  
- 
+
   serialClose(fd);
   return 0;
-
 }
 
 
