@@ -27,19 +27,6 @@ int StrToHex(char str[])
     return (int)strtol(str, 0, 16);
 }
 
-// ************ calculate length of a message to send *****************
-char *sLen(char Command[])
-{
-//    char *bufferSln = new char(10);
-    char *bufferSln = new char[254];
-
-    //so if command =2710AABBCC then strlen=10 /2 =5 -2 = 3
-    sprintf(bufferSln, "%02X", (strlen(Command) / 2 - 2));
-    //delayMicroseconds(250); 
-    cout << "slen = " << bufferSln << "\n<br>" << endl;
-    return bufferSln;
-}
-
 string checkSumString(char Command[])
 {
 char bufferCRC[254] = {0};
@@ -55,22 +42,6 @@ char bufferCRC_2[254] = {0};
      }
     return string(bufferCRC);
 }
-
-// ****  calculate the checksum of the message *******
-char *checkSum(char Command[])
-{
-    char *bufCRC = new char[254];
-    char bufCRCshadow[254] = {0};
-    strncpy(bufCRC, Command, 2); 
-
-    for (uint8_t i = 1; i <= (strlen(Command) / 2 - 1); i++)
-    {
-        strncpy(bufCRCshadow, Command + i * 2, 2);
-        sprintf(bufCRC, "%02X", StrToHex(bufCRC) ^ StrToHex(bufCRCshadow));
-    }
-    return bufCRC;
-}
-
 
 void sendZigbee(char sendString[] )
 {
