@@ -27,7 +27,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2024-01-03 A new sd-card image version RPI-ECU-v3_10 is available (see changelog). [RPIECU-v3_10.zip](https://1drv.ms/u/s!AkMG5FvUwhedjU9uQku2UlsWFGkl?e=yiqWDz)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2024-01-12 A new sd-card image version RPI-ECU-v3_10 is available (see changelog). [RPIECU-v3_10.zip](https://1drv.ms/u/s!AkMG5FvUwhedjVIdU5r1_c1f9J5n?e=mY53BQ)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
