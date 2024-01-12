@@ -137,10 +137,10 @@ int main (int argc, char **argv)
     return(0);
   }
   
-    // construct the command now we put len and checksum
+  // construct the command now we put len and checksum
 
    sprintf(bufferSend, "%02X", (strlen(initCmd) / 2 - 2)); //now starts with a hex representation of the length 
-   strcat(bufferSend, initCmd); // now put slen and the rest together
+   strcat(bufferSend, initCmd); // now add the command
    strcat(bufferSend, checkSumString(bufferSend).c_str()); //add the crc
 
    cout << "command incl. FE, len and crc = FE" << bufferSend << "\n<br>" << endl;
