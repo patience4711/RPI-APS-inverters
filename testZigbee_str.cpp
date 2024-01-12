@@ -2,7 +2,9 @@
 // adds slen and crc, sends it and reads the answer
 // modifications dec 2023 : the buffersize in slen
 // removed the delayMicroseconds on several places
-// simplified the readZigbee and removed processIncomingByte 
+// simplified the readZigbee and removed processIncomingByte
+// changed the char crc to string
+// removed the function sLen
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
