@@ -31,7 +31,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2023-01-08: [ecu_swupdate-v3_10.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_10.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
+2023-01-12: [ecu_swupdate-v3_10.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_10.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
 2022-12-22: [ecu_swupdate-v3_9.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-3_9.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
 
 2022-10-03: [ecu_swupdate-v3_6.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_6.tar) is available (see changelog). Install this only when you have version 3_1 or higher installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
