@@ -1,6 +1,7 @@
 // this program reads a zigbee message from command line
 // adds slen and crc, sends it and reads the answer
-// modifications dec 2023 : the buffersize in slen
+// modifications dec 2023 : 
+// removed sLen function as this caused wrong crc values
 // removed the delayMicroseconds on several places
 // simplified the readZigbee and removed processIncomingByte 
 #include <stdio.h>
