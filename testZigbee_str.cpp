@@ -1,9 +1,9 @@
 // this program reads a zigbee message from command line
 // adds slen and crc, sends it and reads the answer
-// modifications dec 2023 : the buffersize in slen
+// modifications dec 2023 due to wrong crc values on Zero2 and B-model
 // removed the delayMicroseconds on several places
 // simplified the readZigbee and removed processIncomingByte
-// changed the char crc to string
+// changed the char crc() to string crc()
 // removed the function sLen
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,13 +21,6 @@ using namespace std;
 char inMessage[512];
 int readCounter = 0;
 int fd;
-
-
-// ******** convert a char to Hex **************
-int StrToHex(char str[])
-{
-    return (int)strtol(str, 0, 16);
-}
 
 string checkSumString(char Command[])
 {
@@ -54,7 +47,7 @@ void sendZigbee(char sendString[] )
          // we use 2 characters to make a byte
             strncpy(bufferSend, sendString + i * 2, 2);
          // turn the two chars to a byte and send this
-            serialPutchar(fd, StrToHex(bufferSend)); 
+            serialPutchar(fd, strtol(bufferSend, 0, 16));
         }
 }
 
