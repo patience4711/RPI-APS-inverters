@@ -52,18 +52,9 @@ void sendZigbee(char sendString[] )
          // we use 2 characters to make a byte
             strncpy(bufferSend, sendString + i * 2, 2);
          // turn the two chars to a byte and send this
-
             serialPutchar(fd, StrToHex(bufferSend)); 
         }
 }
-
-
-//#include <fstream>
-//bool fexists(const std::string& filename) {
-//  std::ifstream ifile(filename.c_str());
-//  return (bool)ifile;
-//}
-
 
 // **********   wait for serail available ********************************
 bool waitSerialAvailable()
@@ -74,7 +65,7 @@ bool waitSerialAvailable()
       {
       if ( millis() - wait > 2000) return false; // return false after 200
       }
-  // if we are here there is something available
+   // if we are here there is something available
    delay(500); // to give the sender the time to complete writing
    return true;
 }
@@ -163,10 +154,6 @@ int main (int argc, char **argv)
        cout << "no answer\n<br>" << inMessage << endl;
     } 
   
- 
   serialClose(fd);
   return 0;
-
 }
-
-
