@@ -86,7 +86,7 @@ So complete the next steps before sunrise in order to get a smooth migration.<br
 Visit the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/1-PUT-INTO-USE) for further instructions
 
 ## INSTALL ON AN EXISTING RPI SYSTEM ##
-You need to have the imagefile mounted or working so that you can copy the relevant files. Please follow the instructions [here](https://github.com/patience4711/RPI-APS-inverters/issues/106#issuecomment-1923874802) provided by a user who installed it this way.
+You need to have the imagefile mounted or working so that you can copy the relevant files. Please follow the instructions [here](https://github.com/patience4711/RPI-APS-inverters/issues/106#issuecomment-1916389701) provided by a user who installed it this way.
 
 ## HARDWARE
 What you need for this project is:
