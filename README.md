@@ -10,8 +10,8 @@ For information on building and use please see the [WIKI](https://github.com/pat
 See it in action on [YouTube](https://youtu.be/sTnKeFcmqhc)
 
 ## IMPORTANT TO KNOW
-People keep asking for the ssh login, this is 'root' and 'mies'. Please be aware that this is known to the whole world now.
-So **never** put the ssh port open 'to the world'<br><br>
+People keep asking for the ssh login, this is 'ecuuser' and 'ecuuser'. Please be aware that this is known to the whole world now.
+So **never** put the ssh port open 'to the world' or even better, change this.<br><br>
 The software can be updated by installing an upgrade tar file. Please see the wiki.
 
 From outside your network you won't see the menu link. Maintenance can only be done from inside your own network.
@@ -27,34 +27,11 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2024-01-12 A new sd-card image version RPI-ECU-v3_10 is available (see changelog). [RPIECU-v3_10.zip](https://1drv.ms/u/s!AkMG5FvUwhedjVIdU5r1_c1f9J5n?e=mY53BQ)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2024-01-12 A new sd-card image version RPI-ECU-v4_0 is available (see changelog). [RPIECU-v4_0](https://1drv.ms/u/s!AkMG5FvUwhedjVIdU5r1_c1f9J5n?e=mY53BQ)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you currently have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
 2023-01-12: [ecu_swupdate-v3_10.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_10.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
-2022-12-22: [ecu_swupdate-v3_9.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-3_9.tar) is available (see changelog). Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
-
-2022-10-03: [ecu_swupdate-v3_6.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_6.tar) is available (see changelog). Install this only when you have version 3_1 or higher installed (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures)<br><br>
-
-If you feel that your system is somewhat slow or less reactive, you can install 'ZRAM', just like a normal software upgrade. <br>
-You can download this software patch here: [ecu_swupgrade_zram.tar](https://1drv.ms/u/s!AkMG5FvUwhedi2PFOUDRJR9RuR7y?e=URMg97). It is included in sd-card image 3_3.<br>
-
-2022-07-12: A software update to version RPI-ECU-v3_1 is available (see changelog). This is a special update that prepares the system for a new update process. <br>You can install (and should) v3-1 on any version but please follow the instruction.<br>
-2022-07-12: [ecu_swupdate-v3_1.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1dXipsJua0yVYvp?e=6PqitR) (set permissions and prepare for new upgrade process)<br>
-**instruction:** The v3_1 update should be installed twice!. The second time the apache server will be restarted,  which is necessary to effectuate some system settings. The information window will be greyed out than. When done you don't need to do this again, you now can install higher versions.
-From now on, the latest software upgrade will completely update your system to the newest version. No need anymore to do the updates one by one. Example: You have version 2_7. Now if you installed 3_1 (2 times!) and than 3_5, you are completely up-to-date. After you checked the upgrade process please go to the homepage and refresh it.
-
-2022-06-30 A software update to version RPI-ECU-v3_0 is available (see changelog). Install this only when you currently use version 2_9<br>
-[ecu_swupdate-v3_0.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1WZSjk2R9WrGxhn?e=OZolFW) <br>
-2022-06-23 A software update to version RPI-ECU-v2_9 is available (see changelog). Install this only when you currently use version 2_8<br>
-[ecu_swupdate-v2_9.tar](https://1drv.ms/u/s!AkMG5FvUwhedi1N5HHSwSlxo3XOc?e=JTbYdM) <br>
-2022-06-14 A software update to version RPI-ECU-v2_8 is available (see changelog). Install this only when you currently use version 2_7<br>
-[ecu_swupdate_14-06-2022.tar](https://1drv.ms/u/s!AkMG5FvUwhedi0w0itFjZ4A_Jc-n?e=bhabdM) <br>
-
-2022-08-10 The sd-card image RPI-ECU-v3_3 is available. This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions. If you want to backup and restore your settings and databases, be sure you have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!. 
-
-Please see 'CHANGELOG'
-<br><br>
 
 <br><br>
 In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaPqGYXa7vMkXp8?e=kzkdHQ<br><br>
@@ -122,8 +99,12 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v4_0** july 22 2024
+-new up-to-date linux version
+- some cosemetics
+
 **version RPI-ECU-v3_10** jan 9 2024 upgrade archive:
-- optiaized webinterface performance/appearance on mobile devices
+- optimized webinterface performance/appearance on mobile devices
 
 **version RPI-ECU-v3_9** dec 22 2023 upgrade archive:
 - fixed an error (panels 0 and 1 of yc600 were swapped).
