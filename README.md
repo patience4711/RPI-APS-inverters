@@ -27,7 +27,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2024-01-12 A new sd-card image version RPI-ECU-v4_0 is available (see changelog). [RPIECU-v4_0](https://1drv.ms/u/s!AkMG5FvUwhedjX3wOLgyg_M1kRXt?e=7ecuC6)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions in the wiki or readme. If you want to backup and restore your settings and databases, be sure you currently have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2024-08-07 A new sd-card image version RPI-ECU-v4_1 is available (see changelog). [RPIECU-v4_1](https://1drv.ms/u/c/9d17c2d45be40643/EX4ZUx-kq79PsQYE96B8lKgBHDakbNIbQH0nyg646zX51Q?e=xIT5qz)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions in the wiki or readme. If you want to backup and restore your settings and databases, be sure you currently have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
@@ -99,9 +99,9 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v4_0** july 22 2024
--new up-to-date linux version
-- some cosemetics
+**version RPI-ECU-v4_1** aug 6 2024
+- new up-to-date linux version
+- better performance on mobile devices
 
 **version RPI-ECU-v3_10** jan 9 2024 upgrade archive:
 - optimized webinterface performance/appearance on mobile devices
