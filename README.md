@@ -36,7 +36,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br><br>
 In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaPqGYXa7vMkXp8?e=kzkdHQ<br><br>
 **Some webpages:**<br>
-![Examples](https://user-images.githubusercontent.com/12282915/178716054-1f1b1dc6-aacc-4af8-b223-d38e03e35578.jpg)
+![Examples](https://github.com/user-attachments/assets/0ad7d93f-2c64-440c-8f06-fcb0fc12b9ca)
+)
 <br>
 ## FEATURES:
 - all inverter information such as temperature, dc voltage etc available
