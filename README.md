@@ -31,7 +31,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2024-09-02: [ecu_swupdate-v4_2](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v4_2.tar) is available (see changelog). **IMPORTANT** Install this only when you are running version 4_0 or higher (please read [instructions here](https://github.com/patience4711/RPI-APS-inverters/issues/121) .<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
+2024-09-02: [ecu_swupdate-v4_2a](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v4_2a.tar) is available (see changelog). **IMPORTANT** Install this only when you are running version 4_0 or higher (please read [instructions here](https://github.com/patience4711/RPI-APS-inverters/issues/121) .<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
 
 2023-01-12: [ecu_swupdate-v3_10.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_10.tar) is available (see changelog). **IMPORTANT** Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
 
