@@ -75,7 +75,7 @@ What you need for this project is:
 - a 5V dc 3A powersupply see photo
 
 estimates costs some 25 Euro.
-The zigbeemodule should be flashed with a firmware that can be found here https://github.com/Koenkk/zigbee2mqtt/issues/4221.  
+The zigbeemodule should be flashed with a firmware that can be found in the downloaded zip. Fore more info look [here]( https://github.com/Koenkk/zigbee2mqtt/issues/4221).  
 
 ## WIRING ZIGBEE MODULES
 you need 5 dupont cables.
