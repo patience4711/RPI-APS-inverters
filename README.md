@@ -31,7 +31,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
-2024-09-02: [ecu_swupdate-v4_2c](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v4_2c.tar) is available (see changelog). **IMPORTANT** Install this only when you are running version 4_0 or higher (please read [instructions here](https://github.com/patience4711/RPI-APS-inverters/issues/121) .<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
+2024-09-02: [ecu_swupdate-v4_3](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v4_3.tar) is available (see changelog). **IMPORTANT** Install this only when you are running version 4_0 or higher (please read [instructions here](https://github.com/patience4711/RPI-APS-inverters/issues/121) .<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
 
 2023-01-12: [ecu_swupdate-v3_10.tar](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v3_10.tar) is available (see changelog). **IMPORTANT** Install this only when you are running version 3_1 or higher (please see the expanation to version 3_1 below).<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
 
@@ -99,6 +99,11 @@ hardware:<br>
 **You forgot your admin password.** 
 If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page where you
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
+
+## CHANGELOG
+**version RPI-ECU-v4_3** dec 13 2024
+- this version is identical to update v4_2c but hows the correct version nr.
+- changed the way of retrieving system info (update v4_2c)
 
 ## CHANGELOG
 **version RPI-ECU-v4_2** sept 2 2024
