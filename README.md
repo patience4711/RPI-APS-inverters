@@ -27,7 +27,8 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2024-09-03 A new sd-card image version RPI-ECU-v4_2 is available (see changelog). [RPIECU-v4_2](https://1drv.ms/u/c/9d17c2d45be40643/EQEwcXCpSvJEsUxyrcVCJxYBRH8JOIsXwpVvT40yGiEfYw?e=ImiRW9)<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions in the wiki or readme. If you want to backup and restore your settings and databases, be sure you currently have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
+2025-01-27 A new sd-card image version RPI-ECU-v4_4 is available (see changelog). 
+<br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions in the wiki or readme. If you want to backup and restore your settings and databases, be sure you currently have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
@@ -101,6 +102,9 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
+**version RPI-ECU-v4_4** dec 13 2024
+- added zram for better read/write prformance.
+
 **version RPI-ECU-v4_3** dec 13 2024
 - this version is identical to update v4_2c but hows the correct version nr.
 - changed the way of retrieving system info (update v4_2c)
