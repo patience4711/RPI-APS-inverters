@@ -27,7 +27,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 - saved in a database for charts and statistics. 
 
 ## DOWNLOAD SD-CARD IMAGE
-2025-01-27 A new sd-card image version [RPI-ECU-v4_4](https://1drv.ms/u/c/9d17c2d45be40643/EQ6i873HB09LjVMsZ4gpPMEBD10CEyRhfjxW_n2B0HDxEA?e=Yt5poF) is available (see changelog). 
+2025-08-22 A new sd-card image version [RPI-ECU-v5_0](https://1drv.ms/u/c/9d17c2d45be40643/EYADXVU5qvRAsly_wut1CdcBaP8F4s29we9qRV1_00YHLQ?e=WJXHyE) is available (see changelog).
 <br>This has to be installed by burning the disk image to an sdcard. Before you start please read the instructions in the wiki or readme. If you want to backup and restore your settings and databases, be sure you currently have version RPI-ECU-v2_3 or above. And schedule some time after midnight to perform the migration. Please follow the steps in **installation via the sd-card image** , in particular it is important that you expand the filesystem first and than wait for influxdb is running, before restoring your backup!!.
 <br>
 
@@ -56,6 +56,7 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 - The menu is only accessible from local network with login
 - software can be updated by uploading and installing a tar achive
 - data can be requested via a direct link like 'ip_of_ecu/recovery/getInverter.php?inv=x'
+- inverters can be throttled to avoid delivery to the grid.
 
 ## (RE) INSTALLATION INSTRUCTIONS (see also the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/home) for further instructions) 
 **installation via the sd-card image**<br>
