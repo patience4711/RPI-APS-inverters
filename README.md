@@ -60,7 +60,8 @@ In case someone wants to print the housing: https://1drv.ms/u/s!AkMG5FvUwhediwaP
 
 ## (RE) INSTALLATION INSTRUCTIONS (see also the [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/home) for further instructions) 
 **installation via the sd-card image**<br>
-**step 1**<br> Download the package, unzip and burn the image on an sd card. If you are new user of this software please continue with stap 3.<br>
+**step 1**<br> Download the package, unzip and burn the image on an sd card. 'Tip: use 'Raspberry Pi Imager' see [WIKI](https://github.com/patience4711/RPI-APS-inverters/wiki/1-PUT-INTO-USE).
+If you are new user of this software please continue with stap 3.<br>
 **step 2**<br> You already are using this software then you can make a backup of your system and databases first. You should do this after midnight. 
 The backup is primarily intended for system migrations and have to be restored the same day as it was made. If you restore it on a later date you will miss data. 
 So complete the next steps before sunrise in order to get a smooth migration.<br>
