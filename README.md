@@ -32,6 +32,7 @@ This project is intended for reading APS Systems inverters. The program can pair
 <br>
 
 ## DOWNLOAD SOFTWARE UPDATES
+2026-05-18: [ecu_swupdate-v5_2](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v5_2.tar) is available (see changelog).<br>
 2025-08-22: [ecu_swupdate-v4_6](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v4_6.tar) is available (see changelog).<br>
 2024-09-02: [ecu_swupdate-v4_4](https://github.com/patience4711/RPI-APS-inverters/blob/main/ecu_swupdate-v4_4.tar) is available (see changelog).<br> **IMPORTANT** Install updates with v4_x only when you are running version 4_0 or higher (please read [instructions here](https://github.com/patience4711/RPI-APS-inverters/issues/121) .<br>If you experience malformed webpages, please clear your browser cache (delete web history saved pictures and files)<br><br>
 
@@ -105,7 +106,11 @@ If you type http://your_ecu_ip/recovery/recover.php you will enter a secret page
 can drop your wifi credentials. At reboot the accesspoint **RadioAP** is started. 
 
 ## CHANGELOG
-**version RPI-ECU-v5_1** aug 22 2025
+
+**version RPI-ECU-v5_2** May 18 2026
+- fixed a bug in the inverters add page
+
+**version RPI-ECU-v5_1** may 14 2026
 - fixed a bug in the inverters page rendering
 - extended the range of homenet ip's that have access.
 
